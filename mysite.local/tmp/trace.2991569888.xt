@@ -1,0 +1,513 @@
+TRACE START [2020-05-19 08:43:34]
+    0.0035     466968     -> spl_autoload_call(string(14)) /var/www/mysite.local/index.php:15
+    0.0035     467008       -> Composer\Autoload\ClassLoader->loadClass(string(14)) /var/www/mysite.local/index.php:15
+    0.0035     467008         -> Composer\Autoload\ClassLoader->findFile(string(14)) /var/www/mysite.local/vendor/composer/ClassLoader.php:321
+    0.0036     467008           -> Composer\Autoload\ClassLoader->findFileWithExtension(string(14), string(4)) /var/www/mysite.local/vendor/composer/ClassLoader.php:351
+    0.0036     467008             -> strtr(string(14), string(1), string(1)) /var/www/mysite.local/vendor/composer/ClassLoader.php:373
+    0.0037     467056             -> strrpos(string(14), string(1)) /var/www/mysite.local/vendor/composer/ClassLoader.php:378
+    0.0037     467056             -> substr(string(14), long, long) /var/www/mysite.local/vendor/composer/ClassLoader.php:379
+    0.0037     467128             -> substr(string(18), long) /var/www/mysite.local/vendor/composer/ClassLoader.php:382
+    0.0038     467280             -> file_exists(string(79)) /var/www/mysite.local/vendor/composer/ClassLoader.php:384
+    0.0039     467120         -> Composer\Autoload\includeFile(string(79)) /var/www/mysite.local/vendor/composer/ClassLoader.php:322
+    0.0051     539424           -> include(/var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Logger.php) /var/www/mysite.local/vendor/composer/ClassLoader.php:444
+    0.0051     539424             -> spl_autoload_call(string(23)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Logger.php:28
+    0.0051     539472               -> Composer\Autoload\ClassLoader->loadClass(string(23)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Logger.php:28
+    0.0052     539472                 -> Composer\Autoload\ClassLoader->findFile(string(23)) /var/www/mysite.local/vendor/composer/ClassLoader.php:321
+    0.0052     539472                   -> Composer\Autoload\ClassLoader->findFileWithExtension(string(23), string(4)) /var/www/mysite.local/vendor/composer/ClassLoader.php:351
+    0.0052     539472                     -> strtr(string(23), string(1), string(1)) /var/www/mysite.local/vendor/composer/ClassLoader.php:373
+    0.0053     539528                     -> strrpos(string(23), string(1)) /var/www/mysite.local/vendor/composer/ClassLoader.php:378
+    0.0054     539528                     -> substr(string(23), long, long) /var/www/mysite.local/vendor/composer/ClassLoader.php:379
+    0.0054     539600                     -> substr(string(27), long) /var/www/mysite.local/vendor/composer/ClassLoader.php:382
+    0.0054     539760                     -> file_exists(string(76)) /var/www/mysite.local/vendor/composer/ClassLoader.php:384
+    0.0055     539584                 -> Composer\Autoload\includeFile(string(76)) /var/www/mysite.local/vendor/composer/ClassLoader.php:322
+    0.0057     547888                   -> include(/var/www/mysite.local/vendor/psr/log/Psr/Log/LoggerInterface.php) /var/www/mysite.local/vendor/composer/ClassLoader.php:444
+    0.0058     547352             -> spl_autoload_call(string(27)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Logger.php:28
+    0.0058     547408               -> Composer\Autoload\ClassLoader->loadClass(string(27)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Logger.php:28
+    0.0058     547408                 -> Composer\Autoload\ClassLoader->findFile(string(27)) /var/www/mysite.local/vendor/composer/ClassLoader.php:321
+    0.0059     547408                   -> Composer\Autoload\ClassLoader->findFileWithExtension(string(27), string(4)) /var/www/mysite.local/vendor/composer/ClassLoader.php:351
+    0.0059     547408                     -> strtr(string(27), string(1), string(1)) /var/www/mysite.local/vendor/composer/ClassLoader.php:373
+    0.0059     547464                     -> strrpos(string(27), string(1)) /var/www/mysite.local/vendor/composer/ClassLoader.php:378
+    0.0059     547464                     -> substr(string(27), long, long) /var/www/mysite.local/vendor/composer/ClassLoader.php:379
+    0.0060     547536                     -> substr(string(31), long) /var/www/mysite.local/vendor/composer/ClassLoader.php:382
+    0.0060     547720                     -> file_exists(string(92)) /var/www/mysite.local/vendor/composer/ClassLoader.php:384
+    0.0061     547536                 -> Composer\Autoload\includeFile(string(92)) /var/www/mysite.local/vendor/composer/ClassLoader.php:322
+    0.0061     549432                   -> include(/var/www/mysite.local/vendor/monolog/monolog/src/Monolog/ResettableInterface.php) /var/www/mysite.local/vendor/composer/ClassLoader.php:444
+    0.0063     547488     -> Monolog\Logger->__construct(string(5), ???, ???) /var/www/mysite.local/index.php:15
+    0.0064     547488       -> Monolog\Logger->setHandlers(array(0)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Logger.php:150
+    0.0064     547488         -> array_reverse(array(0)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Logger.php:213
+    0.0064     547488     -> spl_autoload_call(string(29)) /var/www/mysite.local/index.php:16
+    0.0064     547544       -> Composer\Autoload\ClassLoader->loadClass(string(29)) /var/www/mysite.local/index.php:16
+    0.0065     547544         -> Composer\Autoload\ClassLoader->findFile(string(29)) /var/www/mysite.local/vendor/composer/ClassLoader.php:321
+    0.0065     547544           -> Composer\Autoload\ClassLoader->findFileWithExtension(string(29), string(4)) /var/www/mysite.local/vendor/composer/ClassLoader.php:351
+    0.0065     547544             -> strtr(string(29), string(1), string(1)) /var/www/mysite.local/vendor/composer/ClassLoader.php:373
+    0.0065     547608             -> strrpos(string(29), string(1)) /var/www/mysite.local/vendor/composer/ClassLoader.php:378
+    0.0066     547608             -> substr(string(29), long, long) /var/www/mysite.local/vendor/composer/ClassLoader.php:379
+    0.0066     547696             -> strrpos(string(15), string(1)) /var/www/mysite.local/vendor/composer/ClassLoader.php:378
+    0.0066     547696             -> substr(string(15), long, long) /var/www/mysite.local/vendor/composer/ClassLoader.php:379
+    0.0066     547680             -> substr(string(33), long) /var/www/mysite.local/vendor/composer/ClassLoader.php:382
+    0.0067     547864             -> file_exists(string(94)) /var/www/mysite.local/vendor/composer/ClassLoader.php:384
+    0.0067     547672         -> Composer\Autoload\includeFile(string(94)) /var/www/mysite.local/vendor/composer/ClassLoader.php:322
+    0.0071     576640           -> include(/var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php) /var/www/mysite.local/vendor/composer/ClassLoader.php:444
+    0.0071     576640             -> spl_autoload_call(string(41)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:23
+    0.0071     576720               -> Composer\Autoload\ClassLoader->loadClass(string(41)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:23
+    0.0072     576720                 -> Composer\Autoload\ClassLoader->findFile(string(41)) /var/www/mysite.local/vendor/composer/ClassLoader.php:321
+    0.0072     576720                   -> Composer\Autoload\ClassLoader->findFileWithExtension(string(41), string(4)) /var/www/mysite.local/vendor/composer/ClassLoader.php:351
+    0.0072     576720                     -> strtr(string(41), string(1), string(1)) /var/www/mysite.local/vendor/composer/ClassLoader.php:373
+    0.0073     576800                     -> strrpos(string(41), string(1)) /var/www/mysite.local/vendor/composer/ClassLoader.php:378
+    0.0073     576800                     -> substr(string(41), long, long) /var/www/mysite.local/vendor/composer/ClassLoader.php:379
+    0.0073     576888                     -> strrpos(string(15), string(1)) /var/www/mysite.local/vendor/composer/ClassLoader.php:378
+    0.0074     576888                     -> substr(string(15), long, long) /var/www/mysite.local/vendor/composer/ClassLoader.php:379
+    0.0074     576872                     -> substr(string(45), long) /var/www/mysite.local/vendor/composer/ClassLoader.php:382
+    0.0074     577096                     -> file_exists(string(106)) /var/www/mysite.local/vendor/composer/ClassLoader.php:384
+    0.0075     576880                 -> Composer\Autoload\includeFile(string(106)) /var/www/mysite.local/vendor/composer/ClassLoader.php:322
+    0.0077     582264                   -> include(/var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php) /var/www/mysite.local/vendor/composer/ClassLoader.php:444
+    0.0077     582264                     -> spl_autoload_call(string(31)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:24
+    0.0077     582320                       -> Composer\Autoload\ClassLoader->loadClass(string(31)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:24
+    0.0077     582320                         -> Composer\Autoload\ClassLoader->findFile(string(31)) /var/www/mysite.local/vendor/composer/ClassLoader.php:321
+    0.0077     582320                           -> Composer\Autoload\ClassLoader->findFileWithExtension(string(31), string(4)) /var/www/mysite.local/vendor/composer/ClassLoader.php:351
+    0.0078     582320                             -> strtr(string(31), string(1), string(1)) /var/www/mysite.local/vendor/composer/ClassLoader.php:373
+    0.0078     582384                             -> strrpos(string(31), string(1)) /var/www/mysite.local/vendor/composer/ClassLoader.php:378
+    0.0078     582384                             -> substr(string(31), long, long) /var/www/mysite.local/vendor/composer/ClassLoader.php:379
+    0.0078     582472                             -> strrpos(string(15), string(1)) /var/www/mysite.local/vendor/composer/ClassLoader.php:378
+    0.0078     582472                             -> substr(string(15), long, long) /var/www/mysite.local/vendor/composer/ClassLoader.php:379
+    0.0079     582456                             -> substr(string(35), long) /var/www/mysite.local/vendor/composer/ClassLoader.php:382
+    0.0079     582640                             -> file_exists(string(96)) /var/www/mysite.local/vendor/composer/ClassLoader.php:384
+    0.0080     582448                         -> Composer\Autoload\includeFile(string(96)) /var/www/mysite.local/vendor/composer/ClassLoader.php:322
+    0.0083     597600                           -> include(/var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Handler/AbstractHandler.php) /var/www/mysite.local/vendor/composer/ClassLoader.php:444
+    0.0083     597600                             -> spl_autoload_call(string(32)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Handler/AbstractHandler.php:24
+    0.0083     597664                               -> Composer\Autoload\ClassLoader->loadClass(string(32)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Handler/AbstractHandler.php:24
+    0.0084     597664                                 -> Composer\Autoload\ClassLoader->findFile(string(32)) /var/www/mysite.local/vendor/composer/ClassLoader.php:321
+    0.0084     597664                                   -> Composer\Autoload\ClassLoader->findFileWithExtension(string(32), string(4)) /var/www/mysite.local/vendor/composer/ClassLoader.php:351
+    0.0084     597664                                     -> strtr(string(32), string(1), string(1)) /var/www/mysite.local/vendor/composer/ClassLoader.php:373
+    0.0084     597728                                     -> strrpos(string(32), string(1)) /var/www/mysite.local/vendor/composer/ClassLoader.php:378
+    0.0084     597728                                     -> substr(string(32), long, long) /var/www/mysite.local/vendor/composer/ClassLoader.php:379
+    0.0085     597816                                     -> strrpos(string(15), string(1)) /var/www/mysite.local/vendor/composer/ClassLoader.php:378
+    0.0085     597816                                     -> substr(string(15), long, long) /var/www/mysite.local/vendor/composer/ClassLoader.php:379
+    0.0086     597800                                     -> substr(string(36), long) /var/www/mysite.local/vendor/composer/ClassLoader.php:382
+    0.0086     597984                                     -> file_exists(string(97)) /var/www/mysite.local/vendor/composer/ClassLoader.php:384
+    0.0086     597792                                 -> Composer\Autoload\includeFile(string(97)) /var/www/mysite.local/vendor/composer/ClassLoader.php:322
+    0.0088     603136                                   -> include(/var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Handler/HandlerInterface.php) /var/www/mysite.local/vendor/composer/ClassLoader.php:444
+    0.0090     602856     -> Monolog\Handler\StreamHandler->__construct(string(10), long, ???, ???, ???) /var/www/mysite.local/index.php:16
+    0.0090     602856       -> Monolog\Handler\StreamHandler->__construct(long, true) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:44
+    0.0090     602856         -> Monolog\Handler\StreamHandler->setLevel(long) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Handler/AbstractHandler.php:41
+    0.0090     602856           -> Monolog\Logger::toMonologLevel(long) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Handler/AbstractHandler.php:127
+    0.0090     602856             -> is_string(long) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Logger.php:530
+    0.0091     602856       -> is_resource(string(10)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:45
+    0.0091     602856       -> is_string(string(10)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:47
+    0.0092     602856     -> Monolog\Logger->pushHandler(class Monolog\Handler\StreamHandler) /var/www/mysite.local/index.php:16
+    0.0092     602880       -> array_unshift(array(0), class Monolog\Handler\StreamHandler) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Logger.php:183
+    0.0093     603256     -> spl_autoload_call(string(12)) /var/www/mysite.local/index.php:18
+    0.0093     603296       -> Composer\Autoload\ClassLoader->loadClass(string(12)) /var/www/mysite.local/index.php:18
+    0.0093     603296         -> Composer\Autoload\ClassLoader->findFile(string(12)) /var/www/mysite.local/vendor/composer/ClassLoader.php:321
+    0.0093     603296           -> Composer\Autoload\ClassLoader->findFileWithExtension(string(12), string(4)) /var/www/mysite.local/vendor/composer/ClassLoader.php:351
+    0.0093     603296             -> strtr(string(12), string(1), string(1)) /var/www/mysite.local/vendor/composer/ClassLoader.php:373
+    0.0094     603344             -> strrpos(string(12), string(1)) /var/www/mysite.local/vendor/composer/ClassLoader.php:378
+    0.0094     603344             -> substr(string(12), long, long) /var/www/mysite.local/vendor/composer/ClassLoader.php:379
+    0.0094     603408             -> substr(string(16), long) /var/www/mysite.local/vendor/composer/ClassLoader.php:382
+    0.0094     603544             -> file_exists(string(60)) /var/www/mysite.local/vendor/composer/ClassLoader.php:384
+    0.0095     603392         -> Composer\Autoload\includeFile(string(60)) /var/www/mysite.local/vendor/composer/ClassLoader.php:322
+    0.0097     608424           -> include(/var/www/mysite.local/Src/MyLogger.php) /var/www/mysite.local/vendor/composer/ClassLoader.php:444
+    0.0097     607904     -> Src\MyLogger::logCurrentMemory() /var/www/mysite.local/index.php:18
+    0.0098     607904       -> memory_get_usage() /var/www/mysite.local/Src/MyLogger.php:10
+    0.0098     607904       -> date(string(11)) /var/www/mysite.local/Src/MyLogger.php:11
+    0.0132     610256       -> end(array(1)) /var/www/mysite.local/Src/MyLogger.php:17
+    0.0132     610336     -> Monolog\Logger->info(string(43), ???) /var/www/mysite.local/index.php:19
+    0.0133     610336       -> Monolog\Logger->addRecord(long, string(43), array(0)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Logger.php:642
+    0.0133     610312         -> Monolog\Logger::getLevelName(long) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Logger.php:298
+    0.0133     610336         -> reset(array(1)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Logger.php:302
+    0.0133     610312         -> current(array(1)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Logger.php:303
+    0.0134     610688         -> Monolog\Handler\StreamHandler->isHandling(array(1)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Logger.php:304
+    0.0134     610312         -> key(array(1)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Logger.php:305
+    0.0135     610392         -> date_default_timezone_get() /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Logger.php:317
+    0.0135     610432         -> DateTimeZone->__construct(string(13)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Logger.php:317
+    0.0136     610448         -> DateTime->__construct(null, class DateTimeZone) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Logger.php:324
+    0.0137     610736         -> DateTime->setTimezone(class DateTimeZone) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Logger.php:326
+    0.0137     611112         -> current(array(1)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Logger.php:343
+    0.0137     611112         -> Monolog\Handler\StreamHandler->handle(array(7)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Logger.php:344
+    0.0137     611112           -> Monolog\Handler\StreamHandler->isHandling(array(7)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:31
+    0.0137     611112           -> Monolog\Handler\StreamHandler->processRecord(array(7)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:35
+    0.0138     611112           -> Monolog\Handler\StreamHandler->getFormatter() /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:37
+    0.0138     611112             -> Monolog\Handler\StreamHandler->getDefaultFormatter() /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Handler/AbstractHandler.php:113
+    0.0138     611112               -> spl_autoload_call(string(31)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Handler/AbstractHandler.php:194
+    0.0138     611168                 -> Composer\Autoload\ClassLoader->loadClass(string(31)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Handler/AbstractHandler.php:194
+    0.0138     611168                   -> Composer\Autoload\ClassLoader->findFile(string(31)) /var/www/mysite.local/vendor/composer/ClassLoader.php:321
+    0.0138     611168                     -> Composer\Autoload\ClassLoader->findFileWithExtension(string(31), string(4)) /var/www/mysite.local/vendor/composer/ClassLoader.php:351
+    0.0138     611168                       -> strtr(string(31), string(1), string(1)) /var/www/mysite.local/vendor/composer/ClassLoader.php:373
+    0.0139     611232                       -> strrpos(string(31), string(1)) /var/www/mysite.local/vendor/composer/ClassLoader.php:378
+    0.0139     611232                       -> substr(string(31), long, long) /var/www/mysite.local/vendor/composer/ClassLoader.php:379
+    0.0139     611328                       -> strrpos(string(17), string(1)) /var/www/mysite.local/vendor/composer/ClassLoader.php:378
+    0.0139     611328                       -> substr(string(17), long, long) /var/www/mysite.local/vendor/composer/ClassLoader.php:379
+    0.0139     611304                       -> substr(string(35), long) /var/www/mysite.local/vendor/composer/ClassLoader.php:382
+    0.0140     611488                       -> file_exists(string(96)) /var/www/mysite.local/vendor/composer/ClassLoader.php:384
+    0.0140     611296                   -> Composer\Autoload\includeFile(string(96)) /var/www/mysite.local/vendor/composer/ClassLoader.php:322
+    0.0145     643040                     -> include(/var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php) /var/www/mysite.local/vendor/composer/ClassLoader.php:444
+    0.0145     643040                       -> spl_autoload_call(string(37)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:24
+    0.0145     643104                         -> Composer\Autoload\ClassLoader->loadClass(string(37)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:24
+    0.0145     643104                           -> Composer\Autoload\ClassLoader->findFile(string(37)) /var/www/mysite.local/vendor/composer/ClassLoader.php:321
+    0.0145     643104                             -> Composer\Autoload\ClassLoader->findFileWithExtension(string(37), string(4)) /var/www/mysite.local/vendor/composer/ClassLoader.php:351
+    0.0145     643104                               -> strtr(string(37), string(1), string(1)) /var/www/mysite.local/vendor/composer/ClassLoader.php:373
+    0.0146     643184                               -> strrpos(string(37), string(1)) /var/www/mysite.local/vendor/composer/ClassLoader.php:378
+    0.0146     643184                               -> substr(string(37), long, long) /var/www/mysite.local/vendor/composer/ClassLoader.php:379
+    0.0146     643280                               -> strrpos(string(17), string(1)) /var/www/mysite.local/vendor/composer/ClassLoader.php:378
+    0.0146     643280                               -> substr(string(17), long, long) /var/www/mysite.local/vendor/composer/ClassLoader.php:379
+    0.0146     643256                               -> substr(string(41), long) /var/www/mysite.local/vendor/composer/ClassLoader.php:382
+    0.0147     643448                               -> file_exists(string(102)) /var/www/mysite.local/vendor/composer/ClassLoader.php:384
+    0.0147     643232                           -> Composer\Autoload\includeFile(string(102)) /var/www/mysite.local/vendor/composer/ClassLoader.php:322
+    0.0151     671696                             -> include(/var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php) /var/www/mysite.local/vendor/composer/ClassLoader.php:444
+    0.0151     671696                               -> spl_autoload_call(string(36)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:22
+    0.0151     671760                                 -> Composer\Autoload\ClassLoader->loadClass(string(36)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:22
+    0.0151     671760                                   -> Composer\Autoload\ClassLoader->findFile(string(36)) /var/www/mysite.local/vendor/composer/ClassLoader.php:321
+    0.0151     671760                                     -> Composer\Autoload\ClassLoader->findFileWithExtension(string(36), string(4)) /var/www/mysite.local/vendor/composer/ClassLoader.php:351
+    0.0151     671760                                       -> strtr(string(36), string(1), string(1)) /var/www/mysite.local/vendor/composer/ClassLoader.php:373
+    0.0152     671840                                       -> strrpos(string(36), string(1)) /var/www/mysite.local/vendor/composer/ClassLoader.php:378
+    0.0152     671840                                       -> substr(string(36), long, long) /var/www/mysite.local/vendor/composer/ClassLoader.php:379
+    0.0152     671936                                       -> strrpos(string(17), string(1)) /var/www/mysite.local/vendor/composer/ClassLoader.php:378
+    0.0152     671936                                       -> substr(string(17), long, long) /var/www/mysite.local/vendor/composer/ClassLoader.php:379
+    0.0152     671912                                       -> substr(string(40), long) /var/www/mysite.local/vendor/composer/ClassLoader.php:382
+    0.0153     672104                                       -> file_exists(string(101)) /var/www/mysite.local/vendor/composer/ClassLoader.php:384
+    0.0153     671888                                   -> Composer\Autoload\includeFile(string(101)) /var/www/mysite.local/vendor/composer/ClassLoader.php:322
+    0.0154     673912                                     -> include(/var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/FormatterInterface.php) /var/www/mysite.local/vendor/composer/ClassLoader.php:444
+    0.0156     672032               -> Monolog\Formatter\LineFormatter->__construct(???, ???, ???, ???) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Handler/AbstractHandler.php:194
+    0.0156     672032                 -> Monolog\Formatter\LineFormatter->__construct(null) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:44
+    0.0156     672032                   -> function_exists(string(11)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:34
+    0.0157     672032           -> Monolog\Formatter\LineFormatter->format(array(7)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:37
+    0.0157     672032             -> Monolog\Formatter\LineFormatter->format(array(7)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:70
+    0.0157     672032               -> Monolog\Formatter\LineFormatter->normalize(array(7), ???) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:44
+    0.0157     672032                 -> is_scalar(array(7)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:65
+    0.0157     672032                 -> is_array(array(7)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:78
+    0.0158     672032                 -> Monolog\Formatter\LineFormatter->normalize(string(43), long) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:88
+    0.0158     672032                   -> is_scalar(string(43)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:65
+    0.0158     672032                   -> is_float(string(43)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:66
+    0.0158     672408                 -> Monolog\Formatter\LineFormatter->normalize(array(0), long) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:88
+    0.0158     672408                   -> is_scalar(array(0)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:65
+    0.0159     672408                   -> is_array(array(0)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:78
+    0.0159     672408                 -> Monolog\Formatter\LineFormatter->normalize(long, long) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:88
+    0.0159     672408                   -> is_scalar(long) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:65
+    0.0159     672408                   -> is_float(long) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:66
+    0.0159     672408                 -> Monolog\Formatter\LineFormatter->normalize(string(4), long) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:88
+    0.0160     672408                   -> is_scalar(string(4)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:65
+    0.0160     672408                   -> is_float(string(4)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:66
+    0.0160     672408                 -> Monolog\Formatter\LineFormatter->normalize(string(5), long) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:88
+    0.0160     672408                   -> is_scalar(string(5)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:65
+    0.0160     672408                   -> is_float(string(5)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:66
+    0.0161     672408                 -> Monolog\Formatter\LineFormatter->normalize(class DateTime, long) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:88
+    0.0161     672408                   -> is_scalar(class DateTime) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:65
+    0.0161     672408                   -> is_array(class DateTime) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:78
+    0.0161     672408                   -> DateTime->format(string(11)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:95
+    0.0161     672664                 -> Monolog\Formatter\LineFormatter->normalize(array(0), long) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:88
+    0.0162     672664                   -> is_scalar(array(0)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:65
+    0.0162     672664                   -> is_array(array(0)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:78
+    0.0162     672704             -> strpos(string(65), string(9)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:102
+    0.0163     672704             -> Monolog\Formatter\LineFormatter->stringify(string(43)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:103
+    0.0163     672704               -> Monolog\Formatter\LineFormatter->convertToString(string(43)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:127
+    0.0163     672704                 -> is_bool(string(43)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:154
+    0.0163     672704                 -> is_scalar(string(43)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:158
+    0.0164     672704               -> Monolog\Formatter\LineFormatter->replaceNewlines(string(43)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:127
+    0.0164     672704                 -> str_replace(array(3), string(1), string(43)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:179
+    0.0164     672704             -> str_replace(string(9), string(43), string(65)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:103
+    0.0164     672864             -> strpos(string(99), string(9)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:102
+    0.0164     672864             -> Monolog\Formatter\LineFormatter->stringify(array(0)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:103
+    0.0165     672864               -> Monolog\Formatter\LineFormatter->convertToString(array(0)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:127
+    0.0165     672864                 -> is_bool(array(0)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:154
+    0.0165     672864                 -> is_scalar(array(0)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:158
+    0.0165     672864                 -> version_compare(string(6), string(5), string(2)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:162
+    0.0165     672864                 -> Monolog\Formatter\LineFormatter->toJson(array(0), true) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:163
+    0.0165     672864                   -> spl_autoload_call(string(13)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:174
+    0.0165     672904                     -> Composer\Autoload\ClassLoader->loadClass(string(13)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:174
+    0.0166     672904                       -> Composer\Autoload\ClassLoader->findFile(string(13)) /var/www/mysite.local/vendor/composer/ClassLoader.php:321
+    0.0166     672904                         -> Composer\Autoload\ClassLoader->findFileWithExtension(string(13), string(4)) /var/www/mysite.local/vendor/composer/ClassLoader.php:351
+    0.0166     672904                           -> strtr(string(13), string(1), string(1)) /var/www/mysite.local/vendor/composer/ClassLoader.php:373
+    0.0166     672952                           -> strrpos(string(13), string(1)) /var/www/mysite.local/vendor/composer/ClassLoader.php:378
+    0.0166     672952                           -> substr(string(13), long, long) /var/www/mysite.local/vendor/composer/ClassLoader.php:379
+    0.0166     673024                           -> substr(string(17), long) /var/www/mysite.local/vendor/composer/ClassLoader.php:382
+    0.0166     673176                           -> file_exists(string(78)) /var/www/mysite.local/vendor/composer/ClassLoader.php:384
+    0.0167     673016                       -> Composer\Autoload\includeFile(string(78)) /var/www/mysite.local/vendor/composer/ClassLoader.php:322
+    0.0169     697144                         -> include(/var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Utils.php) /var/www/mysite.local/vendor/composer/ClassLoader.php:444
+    0.0170     696608                   -> Monolog\Utils::jsonEncode(array(0), null, true) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:174
+    0.0170     696608                     -> version_compare(string(6), string(5), string(2)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Utils.php:37
+    0.0170     696608                     -> json_encode(array(0), long) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Utils.php:42
+    0.0171     696864               -> Monolog\Formatter\LineFormatter->replaceNewlines(string(2)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:127
+    0.0171     696864                 -> str_replace(array(3), string(1), string(2)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:179
+    0.0171     696864             -> str_replace(string(9), string(2), string(99)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:103
+    0.0172     696568             -> strpos(string(92), string(7)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:102
+    0.0172     696576             -> strpos(string(92), string(12)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:102
+    0.0172     696576             -> Monolog\Formatter\LineFormatter->stringify(string(4)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:103
+    0.0172     696576               -> Monolog\Formatter\LineFormatter->convertToString(string(4)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:127
+    0.0172     696576                 -> is_bool(string(4)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:154
+    0.0172     696576                 -> is_scalar(string(4)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:158
+    0.0172     696576               -> Monolog\Formatter\LineFormatter->replaceNewlines(string(4)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:127
+    0.0173     696576                 -> str_replace(array(3), string(1), string(4)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:179
+    0.0173     696576             -> str_replace(string(12), string(4), string(92)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:103
+    0.0174     696560             -> strpos(string(84), string(9)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:102
+    0.0174     696560             -> Monolog\Formatter\LineFormatter->stringify(string(5)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:103
+    0.0174     696560               -> Monolog\Formatter\LineFormatter->convertToString(string(5)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:127
+    0.0174     696560                 -> is_bool(string(5)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:154
+    0.0174     696560                 -> is_scalar(string(5)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:158
+    0.0174     696560               -> Monolog\Formatter\LineFormatter->replaceNewlines(string(5)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:127
+    0.0174     696560                 -> str_replace(array(3), string(1), string(5)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:179
+    0.0175     696560             -> str_replace(string(9), string(5), string(84)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:103
+    0.0175     696560             -> strpos(string(80), string(10)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:102
+    0.0175     696560             -> Monolog\Formatter\LineFormatter->stringify(string(19)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:103
+    0.0175     696560               -> Monolog\Formatter\LineFormatter->convertToString(string(19)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:127
+    0.0175     696560                 -> is_bool(string(19)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:154
+    0.0175     696560                 -> is_scalar(string(19)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:158
+    0.0176     696560               -> Monolog\Formatter\LineFormatter->replaceNewlines(string(19)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:127
+    0.0176     696560                 -> str_replace(array(3), string(1), string(19)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:179
+    0.0176     696560             -> str_replace(string(10), string(19), string(80)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:103
+    0.0176     696568             -> strpos(string(89), string(7)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:102
+    0.0176     696568             -> Monolog\Formatter\LineFormatter->stringify(array(0)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:103
+    0.0177     696568               -> Monolog\Formatter\LineFormatter->convertToString(array(0)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:127
+    0.0177     696568                 -> is_bool(array(0)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:154
+    0.0177     696568                 -> is_scalar(array(0)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:158
+    0.0177     696568                 -> version_compare(string(6), string(5), string(2)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:162
+    0.0177     696568                 -> Monolog\Formatter\LineFormatter->toJson(array(0), true) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:163
+    0.0177     696568                   -> Monolog\Utils::jsonEncode(array(0), null, true) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:174
+    0.0177     696568                     -> version_compare(string(6), string(5), string(2)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Utils.php:37
+    0.0178     696568                     -> json_encode(array(0), long) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Utils.php:42
+    0.0178     696824               -> Monolog\Formatter\LineFormatter->replaceNewlines(string(2)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:127
+    0.0178     696824                 -> str_replace(array(3), string(1), string(2)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:179
+    0.0178     696824             -> str_replace(string(7), string(2), string(89)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:103
+    0.0179     696520             -> strpos(string(84), string(1)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:108
+    0.0179     696264           -> Monolog\Handler\StreamHandler->write(array(8)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+    0.0179     696264             -> is_resource(null) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:94
+    0.0180     696264             -> Monolog\Handler\StreamHandler->createDir() /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:98
+    0.0180     696264               -> Monolog\Handler\StreamHandler->getDirFromStream(string(10)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:165
+    0.0180     696264                 -> strpos(string(10), string(3)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:146
+    0.0180     696264                 -> dirname(string(10)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:148
+    0.0180     696304               -> is_dir(string(3)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:166
+    0.0181     696648             -> set_error_handler(array(2)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:100
+    0.0181     696648             -> fopen(string(10), string(1)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:101
+    0.0181     697216             -> restore_error_handler() /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:105
+    0.0181     696840             -> is_resource(resource(19) of type (stream)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:106
+    0.0182     696840             -> Monolog\Handler\StreamHandler->streamWrite(resource(19) of type (stream), array(8)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:117
+    0.0182     696840               -> fwrite(resource(19) of type (stream), string(84)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:131
+    0.0182     696376         -> next(array(1)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Logger.php:348
+    0.0183     696352         -> current(array(1)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Logger.php:343
+    0.4263     695576     -> Src\MyLogger::logCurrentMemory() /var/www/mysite.local/index.php:23
+    0.4263     695576       -> memory_get_usage() /var/www/mysite.local/Src/MyLogger.php:10
+    0.4264     695576       -> date(string(11)) /var/www/mysite.local/Src/MyLogger.php:11
+    0.4264     696208       -> end(array(2)) /var/www/mysite.local/Src/MyLogger.php:17
+    0.4264     696288     -> Monolog\Logger->info(string(43), ???) /var/www/mysite.local/index.php:24
+    0.4264     696288       -> Monolog\Logger->addRecord(long, string(43), array(0)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Logger.php:642
+    0.4264     696288         -> Monolog\Logger::getLevelName(long) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Logger.php:298
+    0.4264     696312         -> reset(array(1)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Logger.php:302
+    0.4264     696288         -> current(array(1)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Logger.php:303
+    0.4265     696664         -> Monolog\Handler\StreamHandler->isHandling(array(1)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Logger.php:304
+    0.4265     696288         -> key(array(1)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Logger.php:305
+    0.4265     696344         -> DateTime->__construct(null, class DateTimeZone) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Logger.php:324
+    0.4265     696608         -> DateTime->setTimezone(class DateTimeZone) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Logger.php:326
+    0.4265     696984         -> current(array(1)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Logger.php:343
+    0.4265     696984         -> Monolog\Handler\StreamHandler->handle(array(7)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Logger.php:344
+    0.4265     696984           -> Monolog\Handler\StreamHandler->isHandling(array(7)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:31
+    0.4265     696984           -> Monolog\Handler\StreamHandler->processRecord(array(7)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:35
+    0.4266     696984           -> Monolog\Handler\StreamHandler->getFormatter() /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:37
+    0.4266     696984           -> Monolog\Formatter\LineFormatter->format(array(7)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:37
+    0.4266     696984             -> Monolog\Formatter\LineFormatter->format(array(7)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:70
+    0.4266     696984               -> Monolog\Formatter\LineFormatter->normalize(array(7), ???) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:44
+    0.4266     696984                 -> is_scalar(array(7)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:65
+    0.4266     696984                 -> is_array(array(7)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:78
+    0.4266     696984                 -> Monolog\Formatter\LineFormatter->normalize(string(43), long) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:88
+    0.4266     696984                   -> is_scalar(string(43)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:65
+    0.4266     696984                   -> is_float(string(43)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:66
+    0.4266     697360                 -> Monolog\Formatter\LineFormatter->normalize(array(0), long) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:88
+    0.4267     697360                   -> is_scalar(array(0)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:65
+    0.4267     697360                   -> is_array(array(0)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:78
+    0.4267     697360                 -> Monolog\Formatter\LineFormatter->normalize(long, long) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:88
+    0.4267     697360                   -> is_scalar(long) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:65
+    0.4267     697360                   -> is_float(long) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:66
+    0.4267     697360                 -> Monolog\Formatter\LineFormatter->normalize(string(4), long) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:88
+    0.4267     697360                   -> is_scalar(string(4)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:65
+    0.4267     697360                   -> is_float(string(4)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:66
+    0.4268     697360                 -> Monolog\Formatter\LineFormatter->normalize(string(5), long) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:88
+    0.4268     697360                   -> is_scalar(string(5)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:65
+    0.4268     697360                   -> is_float(string(5)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:66
+    0.4268     697360                 -> Monolog\Formatter\LineFormatter->normalize(class DateTime, long) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:88
+    0.4268     697360                   -> is_scalar(class DateTime) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:65
+    0.4268     697360                   -> is_array(class DateTime) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:78
+    0.4268     697360                   -> DateTime->format(string(11)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:95
+    0.4269     697616                 -> Monolog\Formatter\LineFormatter->normalize(array(0), long) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:88
+    0.4269     697616                   -> is_scalar(array(0)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:65
+    0.4269     697616                   -> is_array(array(0)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:78
+    0.4269     697656             -> strpos(string(65), string(9)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:102
+    0.4269     697656             -> Monolog\Formatter\LineFormatter->stringify(string(43)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:103
+    0.4269     697656               -> Monolog\Formatter\LineFormatter->convertToString(string(43)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:127
+    0.4270     697656                 -> is_bool(string(43)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:154
+    0.4270     697656                 -> is_scalar(string(43)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:158
+    0.4270     697656               -> Monolog\Formatter\LineFormatter->replaceNewlines(string(43)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:127
+    0.4270     697656                 -> str_replace(array(3), string(1), string(43)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:179
+    0.4270     697656             -> str_replace(string(9), string(43), string(65)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:103
+    0.4270     697816             -> strpos(string(99), string(9)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:102
+    0.4270     697816             -> Monolog\Formatter\LineFormatter->stringify(array(0)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:103
+    0.4270     697816               -> Monolog\Formatter\LineFormatter->convertToString(array(0)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:127
+    0.4270     697816                 -> is_bool(array(0)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:154
+    0.4271     697816                 -> is_scalar(array(0)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:158
+    0.4271     697816                 -> version_compare(string(6), string(5), string(2)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:162
+    0.4271     697816                 -> Monolog\Formatter\LineFormatter->toJson(array(0), true) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:163
+    0.4271     697816                   -> Monolog\Utils::jsonEncode(array(0), null, true) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:174
+    0.4271     697816                     -> version_compare(string(6), string(5), string(2)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Utils.php:37
+    0.4271     697816                     -> json_encode(array(0), long) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Utils.php:42
+    0.4271     698072               -> Monolog\Formatter\LineFormatter->replaceNewlines(string(2)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:127
+    0.4272     698072                 -> str_replace(array(3), string(1), string(2)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:179
+    0.4272     698072             -> str_replace(string(9), string(2), string(99)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:103
+    0.4272     697776             -> strpos(string(92), string(7)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:102
+    0.4272     697784             -> strpos(string(92), string(12)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:102
+    0.4272     697784             -> Monolog\Formatter\LineFormatter->stringify(string(4)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:103
+    0.4272     697784               -> Monolog\Formatter\LineFormatter->convertToString(string(4)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:127
+    0.4272     697784                 -> is_bool(string(4)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:154
+    0.4272     697784                 -> is_scalar(string(4)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:158
+    0.4272     697784               -> Monolog\Formatter\LineFormatter->replaceNewlines(string(4)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:127
+    0.4273     697784                 -> str_replace(array(3), string(1), string(4)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:179
+    0.4273     697784             -> str_replace(string(12), string(4), string(92)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:103
+    0.4273     697768             -> strpos(string(84), string(9)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:102
+    0.4273     697768             -> Monolog\Formatter\LineFormatter->stringify(string(5)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:103
+    0.4273     697768               -> Monolog\Formatter\LineFormatter->convertToString(string(5)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:127
+    0.4273     697768                 -> is_bool(string(5)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:154
+    0.4273     697768                 -> is_scalar(string(5)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:158
+    0.4273     697768               -> Monolog\Formatter\LineFormatter->replaceNewlines(string(5)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:127
+    0.4273     697768                 -> str_replace(array(3), string(1), string(5)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:179
+    0.4274     697768             -> str_replace(string(9), string(5), string(84)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:103
+    0.4274     697768             -> strpos(string(80), string(10)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:102
+    0.4274     697768             -> Monolog\Formatter\LineFormatter->stringify(string(19)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:103
+    0.4274     697768               -> Monolog\Formatter\LineFormatter->convertToString(string(19)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:127
+    0.4274     697768                 -> is_bool(string(19)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:154
+    0.4274     697768                 -> is_scalar(string(19)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:158
+    0.4274     697768               -> Monolog\Formatter\LineFormatter->replaceNewlines(string(19)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:127
+    0.4274     697768                 -> str_replace(array(3), string(1), string(19)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:179
+    0.4275     697768             -> str_replace(string(10), string(19), string(80)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:103
+    0.4275     697776             -> strpos(string(89), string(7)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:102
+    0.4275     697776             -> Monolog\Formatter\LineFormatter->stringify(array(0)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:103
+    0.4275     697776               -> Monolog\Formatter\LineFormatter->convertToString(array(0)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:127
+    0.4275     697776                 -> is_bool(array(0)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:154
+    0.4275     697776                 -> is_scalar(array(0)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:158
+    0.4275     697776                 -> version_compare(string(6), string(5), string(2)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:162
+    0.4275     697776                 -> Monolog\Formatter\LineFormatter->toJson(array(0), true) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:163
+    0.4275     697776                   -> Monolog\Utils::jsonEncode(array(0), null, true) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:174
+    0.4275     697776                     -> version_compare(string(6), string(5), string(2)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Utils.php:37
+    0.4276     697776                     -> json_encode(array(0), long) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Utils.php:42
+    0.4276     698032               -> Monolog\Formatter\LineFormatter->replaceNewlines(string(2)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:127
+    0.4276     698032                 -> str_replace(array(3), string(1), string(2)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:179
+    0.4276     698032             -> str_replace(string(7), string(2), string(89)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:103
+    0.4276     697728             -> strpos(string(84), string(1)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:108
+    0.4277     697472           -> Monolog\Handler\StreamHandler->write(array(8)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+    0.4277     697472             -> is_resource(resource(19) of type (stream)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:94
+    0.4277     697472             -> Monolog\Handler\StreamHandler->streamWrite(resource(19) of type (stream), array(8)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:117
+    0.4277     697472               -> fwrite(resource(19) of type (stream), string(84)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:131
+    0.4278     697008         -> next(array(1)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Logger.php:348
+    0.4278     696984         -> current(array(1)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Logger.php:343
+    0.4278     696208     -> Src\MyLogger::displayMemoryDifference(long) /var/www/mysite.local/index.php:25
+    0.4278     696208       -> Src\MyLogger::logCurrentMemory() /var/www/mysite.local/Src/MyLogger.php:26
+    0.4278     696208         -> memory_get_usage() /var/www/mysite.local/Src/MyLogger.php:10
+    0.4278     696208         -> date(string(11)) /var/www/mysite.local/Src/MyLogger.php:11
+    0.4279     696840         -> end(array(3)) /var/www/mysite.local/Src/MyLogger.php:17
+    0.4279     696816       -> count(array(3)) /var/www/mysite.local/Src/MyLogger.php:27
+    0.4279     696896     -> Monolog\Logger->info(string(49), ???) /var/www/mysite.local/index.php:25
+    0.4279     696896       -> Monolog\Logger->addRecord(long, string(49), array(0)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Logger.php:642
+    0.4279     696896         -> Monolog\Logger::getLevelName(long) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Logger.php:298
+    0.4279     696920         -> reset(array(1)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Logger.php:302
+    0.4279     696896         -> current(array(1)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Logger.php:303
+    0.4279     697272         -> Monolog\Handler\StreamHandler->isHandling(array(1)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Logger.php:304
+    0.4280     696896         -> key(array(1)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Logger.php:305
+    0.4280     696952         -> DateTime->__construct(null, class DateTimeZone) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Logger.php:324
+    0.4280     697216         -> DateTime->setTimezone(class DateTimeZone) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Logger.php:326
+    0.4280     697592         -> current(array(1)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Logger.php:343
+    0.4280     697592         -> Monolog\Handler\StreamHandler->handle(array(7)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Logger.php:344
+    0.4280     697592           -> Monolog\Handler\StreamHandler->isHandling(array(7)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:31
+    0.4280     697592           -> Monolog\Handler\StreamHandler->processRecord(array(7)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:35
+    0.4280     697592           -> Monolog\Handler\StreamHandler->getFormatter() /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:37
+    0.4281     697592           -> Monolog\Formatter\LineFormatter->format(array(7)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:37
+    0.4281     697592             -> Monolog\Formatter\LineFormatter->format(array(7)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:70
+    0.4281     697592               -> Monolog\Formatter\LineFormatter->normalize(array(7), ???) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:44
+    0.4281     697592                 -> is_scalar(array(7)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:65
+    0.4281     697592                 -> is_array(array(7)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:78
+    0.4281     697592                 -> Monolog\Formatter\LineFormatter->normalize(string(49), long) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:88
+    0.4281     697592                   -> is_scalar(string(49)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:65
+    0.4281     697592                   -> is_float(string(49)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:66
+    0.4281     697968                 -> Monolog\Formatter\LineFormatter->normalize(array(0), long) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:88
+    0.4281     697968                   -> is_scalar(array(0)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:65
+    0.4281     697968                   -> is_array(array(0)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:78
+    0.4282     697968                 -> Monolog\Formatter\LineFormatter->normalize(long, long) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:88
+    0.4282     697968                   -> is_scalar(long) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:65
+    0.4282     697968                   -> is_float(long) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:66
+    0.4282     697968                 -> Monolog\Formatter\LineFormatter->normalize(string(4), long) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:88
+    0.4282     697968                   -> is_scalar(string(4)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:65
+    0.4282     697968                   -> is_float(string(4)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:66
+    0.4282     697968                 -> Monolog\Formatter\LineFormatter->normalize(string(5), long) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:88
+    0.4282     697968                   -> is_scalar(string(5)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:65
+    0.4283     697968                   -> is_float(string(5)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:66
+    0.4283     697968                 -> Monolog\Formatter\LineFormatter->normalize(class DateTime, long) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:88
+    0.4283     697968                   -> is_scalar(class DateTime) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:65
+    0.4283     697968                   -> is_array(class DateTime) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:78
+    0.4283     697968                   -> DateTime->format(string(11)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:95
+    0.4283     698224                 -> Monolog\Formatter\LineFormatter->normalize(array(0), long) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:88
+    0.4283     698224                   -> is_scalar(array(0)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:65
+    0.4283     698224                   -> is_array(array(0)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:78
+    0.4284     698264             -> strpos(string(65), string(9)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:102
+    0.4284     698264             -> Monolog\Formatter\LineFormatter->stringify(string(49)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:103
+    0.4284     698264               -> Monolog\Formatter\LineFormatter->convertToString(string(49)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:127
+    0.4284     698264                 -> is_bool(string(49)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:154
+    0.4284     698264                 -> is_scalar(string(49)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:158
+    0.4284     698264               -> Monolog\Formatter\LineFormatter->replaceNewlines(string(49)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:127
+    0.4284     698264                 -> str_replace(array(3), string(1), string(49)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:179
+    0.4285     698264             -> str_replace(string(9), string(49), string(65)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:103
+    0.4285     698424             -> strpos(string(105), string(9)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:102
+    0.4285     698424             -> Monolog\Formatter\LineFormatter->stringify(array(0)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:103
+    0.4285     698424               -> Monolog\Formatter\LineFormatter->convertToString(array(0)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:127
+    0.4285     698424                 -> is_bool(array(0)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:154
+    0.4285     698424                 -> is_scalar(array(0)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:158
+    0.4285     698424                 -> version_compare(string(6), string(5), string(2)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:162
+    0.4285     698424                 -> Monolog\Formatter\LineFormatter->toJson(array(0), true) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:163
+    0.4285     698424                   -> Monolog\Utils::jsonEncode(array(0), null, true) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:174
+    0.4285     698424                     -> version_compare(string(6), string(5), string(2)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Utils.php:37
+    0.4286     698424                     -> json_encode(array(0), long) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Utils.php:42
+    0.4286     698680               -> Monolog\Formatter\LineFormatter->replaceNewlines(string(2)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:127
+    0.4286     698680                 -> str_replace(array(3), string(1), string(2)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:179
+    0.4286     698680             -> str_replace(string(9), string(2), string(105)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:103
+    0.4286     698384             -> strpos(string(98), string(7)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:102
+    0.4286     698392             -> strpos(string(98), string(12)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:102
+    0.4287     698392             -> Monolog\Formatter\LineFormatter->stringify(string(4)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:103
+    0.4287     698392               -> Monolog\Formatter\LineFormatter->convertToString(string(4)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:127
+    0.4287     698392                 -> is_bool(string(4)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:154
+    0.4287     698392                 -> is_scalar(string(4)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:158
+    0.4287     698392               -> Monolog\Formatter\LineFormatter->replaceNewlines(string(4)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:127
+    0.4287     698392                 -> str_replace(array(3), string(1), string(4)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:179
+    0.4287     698392             -> str_replace(string(12), string(4), string(98)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:103
+    0.4287     698392             -> strpos(string(90), string(9)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:102
+    0.4287     698392             -> Monolog\Formatter\LineFormatter->stringify(string(5)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:103
+    0.4288     698392               -> Monolog\Formatter\LineFormatter->convertToString(string(5)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:127
+    0.4288     698392                 -> is_bool(string(5)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:154
+    0.4288     698392                 -> is_scalar(string(5)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:158
+    0.4288     698392               -> Monolog\Formatter\LineFormatter->replaceNewlines(string(5)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:127
+    0.4288     698392                 -> str_replace(array(3), string(1), string(5)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:179
+    0.4288     698392             -> str_replace(string(9), string(5), string(90)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:103
+    0.4289     698376             -> strpos(string(86), string(10)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:102
+    0.4289     698376             -> Monolog\Formatter\LineFormatter->stringify(string(19)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:103
+    0.4289     698376               -> Monolog\Formatter\LineFormatter->convertToString(string(19)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:127
+    0.4289     698376                 -> is_bool(string(19)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:154
+    0.4289     698376                 -> is_scalar(string(19)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:158
+    0.4289     698376               -> Monolog\Formatter\LineFormatter->replaceNewlines(string(19)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:127
+    0.4289     698376                 -> str_replace(array(3), string(1), string(19)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:179
+    0.4289     698376             -> str_replace(string(10), string(19), string(86)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:103
+    0.4289     698384             -> strpos(string(95), string(7)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:102
+    0.4290     698384             -> Monolog\Formatter\LineFormatter->stringify(array(0)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:103
+    0.4290     698384               -> Monolog\Formatter\LineFormatter->convertToString(array(0)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:127
+    0.4290     698384                 -> is_bool(array(0)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:154
+    0.4290     698384                 -> is_scalar(array(0)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:158
+    0.4290     698384                 -> version_compare(string(6), string(5), string(2)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:162
+    0.4290     698384                 -> Monolog\Formatter\LineFormatter->toJson(array(0), true) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:163
+    0.4290     698384                   -> Monolog\Utils::jsonEncode(array(0), null, true) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php:174
+    0.4290     698384                     -> version_compare(string(6), string(5), string(2)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Utils.php:37
+    0.4290     698384                     -> json_encode(array(0), long) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Utils.php:42
+    0.4291     698640               -> Monolog\Formatter\LineFormatter->replaceNewlines(string(2)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:127
+    0.4291     698640                 -> str_replace(array(3), string(1), string(2)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:179
+    0.4291     698640             -> str_replace(string(7), string(2), string(95)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:103
+    0.4291     698352             -> strpos(string(90), string(1)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php:108
+    0.4291     698096           -> Monolog\Handler\StreamHandler->write(array(8)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php:39
+    0.4292     698096             -> is_resource(resource(19) of type (stream)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:94
+    0.4292     698096             -> Monolog\Handler\StreamHandler->streamWrite(resource(19) of type (stream), array(8)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:117
+    0.4292     698096               -> fwrite(resource(19) of type (stream), string(90)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php:131
+    0.4292     697616         -> next(array(1)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Logger.php:348
+    0.4292     697592         -> current(array(1)) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Logger.php:343
+    0.4293     696816     -> xdebug_stop_trace() /var/www/mysite.local/index.php:27
+    0.4293     696896
+TRACE END   [2020-05-19 08:43:34]
+
