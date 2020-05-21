@@ -1,0 +1,9 @@
+{
+    "require": {
+        "monolog/monolog": "^1.25"
+    },
+	
+	"autoload": {
+        "psr-4": {"Src\\": "Src"}
+    }
+}

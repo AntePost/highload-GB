@@ -1,0 +1,4266 @@
+version: 1
+creator: xdebug 2.9.5 (PHP 7.2.30)
+cmd: /var/www/mysite.local/index.php
+part: 1
+positions: line
+
+events: Time Memory
+
+fl=(1) /var/www/mysite.local/vendor/composer/autoload_real.php
+fn=(1) require_once::/var/www/mysite.local/vendor/composer/autoload_real.php
+1 11 0
+
+fl=(2) php:internal
+fn=(2) php::spl_autoload_register
+25 19 520
+
+fl=(3) /var/www/mysite.local/vendor/composer/ClassLoader.php
+fn=(3) require::/var/www/mysite.local/vendor/composer/ClassLoader.php
+1 4 0
+
+fl=(1)
+fn=(4) ComposerAutoloaderInit5363110b9b6c18ca84d42187ee55a68c::loadClassLoader
+9 991 47776
+cfl=(3)
+cfn=(3)
+calls=1 0 0
+12 4 0
+
+fl=(2)
+fn=(5) php::spl_autoload_call
+26 24 0
+cfl=(1)
+cfn=(4)
+calls=1 0 0
+26 995 47776
+
+fl=(2)
+fn=(6) php::{zend_pass}
+26 0 0
+
+fl=(2)
+fn=(7) php::spl_autoload_unregister
+27 5 -144
+
+fl=(2)
+fn=(8) php::function_exists
+29 3 0
+
+fl=(4) /var/www/mysite.local/vendor/composer/autoload_static.php
+fn=(9) require_once::/var/www/mysite.local/vendor/composer/autoload_static.php
+1 2 0
+
+fl=(2)
+fn=(10) php::Closure::bind
+45 3 776
+
+fl=(4)
+fn=(11) Composer\Autoload\ComposerStaticInit5363110b9b6c18ca84d42187ee55a68c::getInitializer
+39 40 0
+cfl=(2)
+cfn=(10)
+calls=1 0 0
+45 3 776
+
+fl=(4)
+fn=(12) Composer\Autoload\ClassLoader::Composer\Autoload\{closure:/var/www/mysite.local/vendor/composer/autoload_static.php:41-45}
+41 15 -776
+
+fl=(2)
+fn=(2)
+302 4 128
+
+fl=(3)
+fn=(13) Composer\Autoload\ClassLoader->register
+300 22 0
+cfl=(2)
+cfn=(2)
+calls=1 0 0
+302 4 128
+
+fl=(1)
+fn=(14) ComposerAutoloaderInit5363110b9b6c18ca84d42187ee55a68c::getLoader
+19 441 7136
+cfl=(2)
+cfn=(2)
+calls=1 0 0
+25 19 520
+cfl=(2)
+cfn=(5)
+calls=1 0 0
+26 1019 47776
+cfl=(2)
+cfn=(6)
+calls=1 0 0
+26 0 0
+cfl=(2)
+cfn=(7)
+calls=1 0 0
+27 5 -144
+cfl=(2)
+cfn=(8)
+calls=1 0 0
+29 3 0
+cfl=(4)
+cfn=(9)
+calls=1 0 0
+31 2 0
+cfl=(4)
+cfn=(11)
+calls=1 0 0
+33 43 776
+cfl=(4)
+cfn=(12)
+calls=1 0 0
+33 15 -776
+cfl=(3)
+cfn=(13)
+calls=1 0 0
+51 26 128
+
+fl=(5) /var/www/mysite.local/vendor/autoload.php
+fn=(15) require_once::/var/www/mysite.local/vendor/autoload.php
+1 432 8904
+cfl=(1)
+cfn=(1)
+calls=1 0 0
+5 11 0
+cfl=(1)
+cfn=(14)
+calls=1 0 0
+7 1579 55416
+
+fl=(2)
+fn=(16) php::error_reporting
+5 6 408
+
+fl=(2)
+fn=(17) php::ini_set
+6 5 0
+
+fl=(2)
+fn=(18) php::xdebug_start_trace
+8 240 80
+
+fl=(2)
+fn=(19) php::strtr
+373 6 40
+
+fl=(2)
+fn=(20) php::strrpos
+378 3 0
+
+fl=(2)
+fn=(21) php::substr
+379 3 32
+
+fl=(2)
+fn=(21)
+382 0 40
+
+fl=(2)
+fn=(22) php::file_exists
+384 22 0
+
+fl=(3)
+fn=(23) Composer\Autoload\ClassLoader->findFileWithExtension
+370 227 0
+cfl=(2)
+cfn=(19)
+calls=1 0 0
+373 6 40
+cfl=(2)
+cfn=(20)
+calls=1 0 0
+378 3 0
+cfl=(2)
+cfn=(21)
+calls=1 0 0
+379 3 32
+cfl=(2)
+cfn=(21)
+calls=1 0 0
+382 0 40
+cfl=(2)
+cfn=(22)
+calls=1 0 0
+384 22 0
+
+fl=(3)
+fn=(24) Composer\Autoload\ClassLoader->findFile
+335 66 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+351 263 112
+
+fl=(2)
+fn=(19)
+373 1 48
+
+fl=(2)
+fn=(20)
+378 0 0
+
+fl=(2)
+fn=(21)
+379 0 32
+
+fl=(2)
+fn=(21)
+382 0 48
+
+fl=(2)
+fn=(22)
+384 10 0
+
+fl=(3)
+fn=(23)
+370 230 -16
+cfl=(2)
+cfn=(19)
+calls=1 0 0
+373 1 48
+cfl=(2)
+cfn=(20)
+calls=1 0 0
+378 0 0
+cfl=(2)
+cfn=(21)
+calls=1 0 0
+379 0 32
+cfl=(2)
+cfn=(21)
+calls=1 0 0
+382 0 48
+cfl=(2)
+cfn=(22)
+calls=1 0 0
+384 10 0
+
+fl=(3)
+fn=(24)
+335 56 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+351 242 112
+
+fl=(6) /var/www/mysite.local/vendor/psr/log/Psr/Log/LoggerInterface.php
+fn=(25) include::/var/www/mysite.local/vendor/psr/log/Psr/Log/LoggerInterface.php
+1 3 0
+
+fl=(3)
+fn=(26) Composer\Autoload\includeFile
+442 230 7920
+cfl=(6)
+cfn=(25)
+calls=1 0 0
+444 3 0
+
+fl=(3)
+fn=(27) Composer\Autoload\ClassLoader->loadClass
+319 63 -112
+cfl=(3)
+cfn=(24)
+calls=1 0 0
+321 299 112
+cfl=(3)
+cfn=(26)
+calls=1 0 0
+322 233 7920
+
+fl=(2)
+fn=(5)
+28 36 0
+cfl=(3)
+cfn=(27)
+calls=1 0 0
+28 597 7920
+
+fl=(2)
+fn=(19)
+373 1 56
+
+fl=(2)
+fn=(20)
+378 0 0
+
+fl=(2)
+fn=(21)
+379 0 32
+
+fl=(2)
+fn=(21)
+382 0 48
+
+fl=(2)
+fn=(22)
+384 7 0
+
+fl=(3)
+fn=(23)
+370 153 -8
+cfl=(2)
+cfn=(19)
+calls=1 0 0
+373 1 56
+cfl=(2)
+cfn=(20)
+calls=1 0 0
+378 0 0
+cfl=(2)
+cfn=(21)
+calls=1 0 0
+379 0 32
+cfl=(2)
+cfn=(21)
+calls=1 0 0
+382 0 48
+cfl=(2)
+cfn=(22)
+calls=1 0 0
+384 7 0
+
+fl=(3)
+fn=(24)
+335 50 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+351 163 128
+
+fl=(7) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/ResettableInterface.php
+fn=(28) include::/var/www/mysite.local/vendor/monolog/monolog/src/Monolog/ResettableInterface.php
+1 2 0
+
+fl=(3)
+fn=(26)
+442 89 1512
+cfl=(7)
+cfn=(28)
+calls=1 0 0
+444 2 0
+
+fl=(3)
+fn=(27)
+319 53 -128
+cfl=(3)
+cfn=(24)
+calls=1 0 0
+321 214 128
+cfl=(3)
+cfn=(26)
+calls=1 0 0
+322 92 1512
+
+fl=(2)
+fn=(5)
+28 30 0
+cfl=(3)
+cfn=(27)
+calls=1 0 0
+28 360 1512
+
+fl=(8) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Logger.php
+fn=(29) include::/var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Logger.php
+1 72 16
+cfl=(2)
+cfn=(5)
+calls=1 0 0
+28 633 7920
+cfl=(2)
+cfn=(5)
+calls=1 0 0
+28 391 1512
+
+fl=(3)
+fn=(26)
+442 1233 71560
+cfl=(8)
+cfn=(29)
+calls=1 0 0
+444 1096 9448
+
+fl=(3)
+fn=(27)
+319 123 -112
+cfl=(3)
+cfn=(24)
+calls=1 0 0
+321 330 112
+cfl=(3)
+cfn=(26)
+calls=1 0 0
+322 2330 81008
+
+fl=(2)
+fn=(5)
+15 34 0
+cfl=(3)
+cfn=(27)
+calls=1 0 0
+15 2784 81008
+
+fl=(2)
+fn=(30) php::array_reverse
+213 3 56
+
+fl=(8)
+fn=(31) Monolog\Logger->setHandlers
+210 27 -56
+cfl=(2)
+cfn=(30)
+calls=1 0 0
+213 3 56
+
+fl=(8)
+fn=(32) Monolog\Logger->__construct
+147 36 0
+cfl=(8)
+cfn=(31)
+calls=1 0 0
+150 30 0
+
+fl=(2)
+fn=(19)
+373 0 56
+
+fl=(2)
+fn=(20)
+378 0 0
+
+fl=(2)
+fn=(21)
+379 0 40
+
+fl=(2)
+fn=(20)
+378 1 0
+
+fl=(2)
+fn=(21)
+379 0 32
+
+fl=(2)
+fn=(21)
+382 0 56
+
+fl=(2)
+fn=(22)
+384 9 0
+
+fl=(3)
+fn=(23)
+370 184 -56
+cfl=(2)
+cfn=(19)
+calls=1 0 0
+373 0 56
+cfl=(2)
+cfn=(20)
+calls=1 0 0
+378 0 0
+cfl=(2)
+cfn=(21)
+calls=1 0 0
+379 0 40
+cfl=(2)
+cfn=(20)
+calls=1 0 0
+378 1 0
+cfl=(2)
+cfn=(21)
+calls=1 0 0
+379 0 32
+cfl=(2)
+cfn=(21)
+calls=1 0 0
+382 0 56
+cfl=(2)
+cfn=(22)
+calls=1 0 0
+384 9 0
+
+fl=(3)
+fn=(24)
+335 50 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+351 197 128
+
+fl=(2)
+fn=(19)
+373 0 80
+
+fl=(2)
+fn=(20)
+378 0 0
+
+fl=(2)
+fn=(21)
+379 0 40
+
+fl=(2)
+fn=(20)
+378 0 0
+
+fl=(2)
+fn=(21)
+379 1 32
+
+fl=(2)
+fn=(21)
+382 0 64
+
+fl=(2)
+fn=(22)
+384 7 0
+
+fl=(3)
+fn=(23)
+370 256 -56
+cfl=(2)
+cfn=(19)
+calls=1 0 0
+373 0 80
+cfl=(2)
+cfn=(20)
+calls=1 0 0
+378 0 0
+cfl=(2)
+cfn=(21)
+calls=1 0 0
+379 0 40
+cfl=(2)
+cfn=(20)
+calls=1 0 0
+378 0 0
+cfl=(2)
+cfn=(21)
+calls=1 0 0
+379 1 32
+cfl=(2)
+cfn=(21)
+calls=1 0 0
+382 0 64
+cfl=(2)
+cfn=(22)
+calls=1 0 0
+384 7 0
+
+fl=(3)
+fn=(24)
+335 51 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+351 267 160
+
+fl=(2)
+fn=(19)
+373 1 56
+
+fl=(2)
+fn=(20)
+378 0 0
+
+fl=(2)
+fn=(21)
+379 0 40
+
+fl=(2)
+fn=(20)
+378 0 0
+
+fl=(2)
+fn=(21)
+379 0 32
+
+fl=(2)
+fn=(21)
+382 0 56
+
+fl=(2)
+fn=(22)
+384 7 0
+
+fl=(3)
+fn=(23)
+370 156 -56
+cfl=(2)
+cfn=(19)
+calls=1 0 0
+373 1 56
+cfl=(2)
+cfn=(20)
+calls=1 0 0
+378 0 0
+cfl=(2)
+cfn=(21)
+calls=1 0 0
+379 0 40
+cfl=(2)
+cfn=(20)
+calls=1 0 0
+378 0 0
+cfl=(2)
+cfn=(21)
+calls=1 0 0
+379 0 32
+cfl=(2)
+cfn=(21)
+calls=1 0 0
+382 0 56
+cfl=(2)
+cfn=(22)
+calls=1 0 0
+384 7 0
+
+fl=(3)
+fn=(24)
+335 51 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+351 166 128
+
+fl=(2)
+fn=(19)
+373 0 64
+
+fl=(2)
+fn=(20)
+378 0 0
+
+fl=(2)
+fn=(21)
+379 0 40
+
+fl=(2)
+fn=(20)
+378 0 0
+
+fl=(2)
+fn=(21)
+379 0 32
+
+fl=(2)
+fn=(21)
+382 0 56
+
+fl=(2)
+fn=(22)
+384 6 0
+
+fl=(3)
+fn=(23)
+370 203 -64
+cfl=(2)
+cfn=(19)
+calls=1 0 0
+373 0 64
+cfl=(2)
+cfn=(20)
+calls=1 0 0
+378 0 0
+cfl=(2)
+cfn=(21)
+calls=1 0 0
+379 0 40
+cfl=(2)
+cfn=(20)
+calls=1 0 0
+378 0 0
+cfl=(2)
+cfn=(21)
+calls=1 0 0
+379 0 32
+cfl=(2)
+cfn=(21)
+calls=1 0 0
+382 0 56
+cfl=(2)
+cfn=(22)
+calls=1 0 0
+384 6 0
+
+fl=(3)
+fn=(24)
+335 51 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+351 215 128
+
+fl=(9) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Handler/HandlerInterface.php
+fn=(33) include::/var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Handler/HandlerInterface.php
+1 1 0
+
+fl=(3)
+fn=(26)
+442 125 4928
+cfl=(9)
+cfn=(33)
+calls=1 0 0
+444 1 0
+
+fl=(3)
+fn=(27)
+319 57 -128
+cfl=(3)
+cfn=(24)
+calls=1 0 0
+321 267 128
+cfl=(3)
+cfn=(26)
+calls=1 0 0
+322 127 4928
+
+fl=(2)
+fn=(5)
+24 27 0
+cfl=(3)
+cfn=(27)
+calls=1 0 0
+24 452 4928
+
+fl=(10) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Handler/AbstractHandler.php
+fn=(34) include::/var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Handler/AbstractHandler.php
+1 32 16
+cfl=(2)
+cfn=(5)
+calls=1 0 0
+24 479 4928
+
+fl=(3)
+fn=(26)
+442 351 14472
+cfl=(10)
+cfn=(34)
+calls=1 0 0
+444 512 4944
+
+fl=(3)
+fn=(27)
+319 48 -128
+cfl=(3)
+cfn=(24)
+calls=1 0 0
+321 217 128
+cfl=(3)
+cfn=(26)
+calls=1 0 0
+322 864 19416
+
+fl=(2)
+fn=(5)
+24 33 0
+cfl=(3)
+cfn=(27)
+calls=1 0 0
+24 1130 19416
+
+fl=(11) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php
+fn=(35) include::/var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php
+1 28 1360
+cfl=(2)
+cfn=(5)
+calls=1 0 0
+24 1163 19416
+
+fl=(3)
+fn=(26)
+442 188 4872
+cfl=(11)
+cfn=(35)
+calls=1 0 0
+444 1192 20776
+
+fl=(3)
+fn=(27)
+319 49 -160
+cfl=(3)
+cfn=(24)
+calls=1 0 0
+321 319 160
+cfl=(3)
+cfn=(26)
+calls=1 0 0
+322 1380 25648
+
+fl=(2)
+fn=(5)
+23 26 0
+cfl=(3)
+cfn=(27)
+calls=1 0 0
+23 1749 25648
+
+fl=(12) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php
+fn=(36) include::/var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php
+1 25 1040
+cfl=(2)
+cfn=(5)
+calls=1 0 0
+23 1775 25648
+
+fl=(3)
+fn=(26)
+442 397 28456
+cfl=(12)
+cfn=(36)
+calls=1 0 0
+444 1801 26688
+
+fl=(3)
+fn=(27)
+319 45 -128
+cfl=(3)
+cfn=(24)
+calls=1 0 0
+321 248 128
+cfl=(3)
+cfn=(26)
+calls=1 0 0
+322 2199 55144
+
+fl=(2)
+fn=(5)
+16 25 0
+cfl=(3)
+cfn=(27)
+calls=1 0 0
+16 2493 55144
+
+fl=(2)
+fn=(37) php::is_string
+530 0 0
+
+fl=(8)
+fn=(38) Monolog\Logger::toMonologLevel
+528 21 0
+cfl=(2)
+cfn=(37)
+calls=1 0 0
+530 0 0
+
+fl=(10)
+fn=(39) Monolog\Handler\StreamHandler->setLevel
+125 27 0
+cfl=(8)
+cfn=(38)
+calls=1 0 0
+127 21 0
+
+fl=(10)
+fn=(40) Monolog\Handler\StreamHandler->__construct
+39 27 0
+cfl=(10)
+cfn=(39)
+calls=1 0 0
+41 49 0
+
+fl=(2)
+fn=(41) php::is_resource
+45 0 0
+
+fl=(2)
+fn=(37)
+47 0 0
+
+fl=(12)
+fn=(40)
+42 67 0
+cfl=(10)
+cfn=(40)
+calls=1 0 0
+44 77 0
+cfl=(2)
+cfn=(41)
+calls=1 0 0
+45 0 0
+cfl=(2)
+cfn=(37)
+calls=1 0 0
+47 0 0
+
+fl=(2)
+fn=(42) php::array_unshift
+183 4 376
+
+fl=(8)
+fn=(43) Monolog\Logger->pushHandler
+181 26 24
+cfl=(2)
+cfn=(42)
+calls=1 0 0
+183 4 376
+
+fl=(2)
+fn=(19)
+373 1 40
+
+fl=(2)
+fn=(20)
+378 0 0
+
+fl=(2)
+fn=(21)
+379 1 32
+
+fl=(2)
+fn=(21)
+382 0 40
+
+fl=(2)
+fn=(22)
+384 6 0
+
+fl=(3)
+fn=(23)
+370 115 -16
+cfl=(2)
+cfn=(19)
+calls=1 0 0
+373 1 40
+cfl=(2)
+cfn=(20)
+calls=1 0 0
+378 0 0
+cfl=(2)
+cfn=(21)
+calls=1 0 0
+379 1 32
+cfl=(2)
+cfn=(21)
+calls=1 0 0
+382 0 40
+cfl=(2)
+cfn=(22)
+calls=1 0 0
+384 6 0
+
+fl=(3)
+fn=(24)
+335 75 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+351 125 96
+
+fl=(13) /var/www/mysite.local/Src/MyLogger.php
+fn=(44) include::/var/www/mysite.local/Src/MyLogger.php
+1 2 0
+
+fl=(3)
+fn=(26)
+442 162 4648
+cfl=(13)
+cfn=(44)
+calls=1 0 0
+444 2 0
+
+fl=(3)
+fn=(27)
+319 51 -96
+cfl=(3)
+cfn=(24)
+calls=1 0 0
+321 200 96
+cfl=(3)
+cfn=(26)
+calls=1 0 0
+322 164 4648
+
+fl=(2)
+fn=(5)
+18 28 0
+cfl=(3)
+cfn=(27)
+calls=1 0 0
+18 416 4648
+
+fl=(2)
+fn=(45) php::memory_get_usage
+10 4 0
+
+fl=(2)
+fn=(46) php::date
+11 3391 1632
+
+fl=(2)
+fn=(47) php::end
+17 3 0
+
+fl=(13)
+fn=(48) Src\MyLogger::logCurrentMemory
+8 75 720
+cfl=(2)
+cfn=(45)
+calls=1 0 0
+10 4 0
+cfl=(2)
+cfn=(46)
+calls=1 0 0
+11 3391 1632
+cfl=(2)
+cfn=(47)
+calls=1 0 0
+17 3 0
+
+fl=(8)
+fn=(49) Monolog\Logger::getLevelName
+513 4 0
+
+fl=(2)
+fn=(50) php::reset
+302 0 0
+
+fl=(2)
+fn=(51) php::current
+303 1 0
+
+fl=(10)
+fn=(52) Monolog\Handler\StreamHandler->isHandling
+48 56 0
+
+fl=(2)
+fn=(53) php::key
+305 0 0
+
+fl=(2)
+fn=(54) php::date_default_timezone_get
+317 1 40
+
+fl=(2)
+fn=(55) php::DateTimeZone->__construct
+317 77 0
+
+fl=(2)
+fn=(56) php::DateTime->__construct
+324 19 288
+
+fl=(2)
+fn=(57) php::DateTime->setTimezone
+326 3 0
+
+fl=(2)
+fn=(51)
+343 0 0
+
+fl=(10)
+fn=(52)
+48 1 0
+
+fl=(11)
+fn=(58) Monolog\Handler\StreamHandler->processRecord
+58 2 0
+
+fl=(2)
+fn=(19)
+373 0 56
+
+fl=(2)
+fn=(20)
+378 0 0
+
+fl=(2)
+fn=(21)
+379 0 48
+
+fl=(2)
+fn=(20)
+378 0 0
+
+fl=(2)
+fn=(21)
+379 0 32
+
+fl=(2)
+fn=(21)
+382 0 56
+
+fl=(2)
+fn=(22)
+384 6 0
+
+fl=(3)
+fn=(23)
+370 128 -64
+cfl=(2)
+cfn=(19)
+calls=1 0 0
+373 0 56
+cfl=(2)
+cfn=(20)
+calls=1 0 0
+378 0 0
+cfl=(2)
+cfn=(21)
+calls=1 0 0
+379 0 48
+cfl=(2)
+cfn=(20)
+calls=1 0 0
+378 0 0
+cfl=(2)
+cfn=(21)
+calls=1 0 0
+379 0 32
+cfl=(2)
+cfn=(21)
+calls=1 0 0
+382 0 56
+cfl=(2)
+cfn=(22)
+calls=1 0 0
+384 6 0
+
+fl=(3)
+fn=(24)
+335 45 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+351 137 128
+
+fl=(2)
+fn=(19)
+373 0 64
+
+fl=(2)
+fn=(20)
+378 0 0
+
+fl=(2)
+fn=(21)
+379 0 48
+
+fl=(2)
+fn=(20)
+378 1 0
+
+fl=(2)
+fn=(21)
+379 0 32
+
+fl=(2)
+fn=(21)
+382 1 64
+
+fl=(2)
+fn=(22)
+384 5 0
+
+fl=(3)
+fn=(23)
+370 135 -80
+cfl=(2)
+cfn=(19)
+calls=1 0 0
+373 0 64
+cfl=(2)
+cfn=(20)
+calls=1 0 0
+378 0 0
+cfl=(2)
+cfn=(21)
+calls=1 0 0
+379 0 48
+cfl=(2)
+cfn=(20)
+calls=1 0 0
+378 1 0
+cfl=(2)
+cfn=(21)
+calls=1 0 0
+379 0 32
+cfl=(2)
+cfn=(21)
+calls=1 0 0
+382 1 64
+cfl=(2)
+cfn=(22)
+calls=1 0 0
+384 5 0
+
+fl=(3)
+fn=(24)
+335 46 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+351 147 128
+
+fl=(2)
+fn=(19)
+373 0 64
+
+fl=(2)
+fn=(20)
+378 0 0
+
+fl=(2)
+fn=(21)
+379 0 48
+
+fl=(2)
+fn=(20)
+378 1 0
+
+fl=(2)
+fn=(21)
+379 0 32
+
+fl=(2)
+fn=(21)
+382 0 64
+
+fl=(2)
+fn=(22)
+384 5 0
+
+fl=(3)
+fn=(23)
+370 152 -80
+cfl=(2)
+cfn=(19)
+calls=1 0 0
+373 0 64
+cfl=(2)
+cfn=(20)
+calls=1 0 0
+378 0 0
+cfl=(2)
+cfn=(21)
+calls=1 0 0
+379 0 48
+cfl=(2)
+cfn=(20)
+calls=1 0 0
+378 1 0
+cfl=(2)
+cfn=(21)
+calls=1 0 0
+379 0 32
+cfl=(2)
+cfn=(21)
+calls=1 0 0
+382 0 64
+cfl=(2)
+cfn=(22)
+calls=1 0 0
+384 5 0
+
+fl=(3)
+fn=(24)
+335 41 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+351 159 128
+
+fl=(14) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/FormatterInterface.php
+fn=(59) include::/var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/FormatterInterface.php
+1 1 0
+
+fl=(3)
+fn=(26)
+442 92 1640
+cfl=(14)
+cfn=(59)
+calls=1 0 0
+444 1 0
+
+fl=(3)
+fn=(27)
+319 84 -128
+cfl=(3)
+cfn=(24)
+calls=1 0 0
+321 201 128
+cfl=(3)
+cfn=(26)
+calls=1 0 0
+322 94 1640
+
+fl=(2)
+fn=(5)
+22 24 0
+cfl=(3)
+cfn=(27)
+calls=1 0 0
+22 380 1640
+
+fl=(15) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php
+fn=(60) include::/var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php
+1 23 8
+cfl=(2)
+cfn=(5)
+calls=1 0 0
+22 405 1640
+
+fl=(3)
+fn=(26)
+442 361 27888
+cfl=(15)
+cfn=(60)
+calls=1 0 0
+444 428 1648
+
+fl=(3)
+fn=(27)
+319 40 -128
+cfl=(3)
+cfn=(24)
+calls=1 0 0
+321 193 128
+cfl=(3)
+cfn=(26)
+calls=1 0 0
+322 790 29536
+
+fl=(2)
+fn=(5)
+24 23 0
+cfl=(3)
+cfn=(27)
+calls=1 0 0
+24 1024 29536
+
+fl=(16) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php
+fn=(61) include::/var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Formatter/LineFormatter.php
+1 23 24
+cfl=(2)
+cfn=(5)
+calls=1 0 0
+24 1047 29536
+
+fl=(3)
+fn=(26)
+442 468 31232
+cfl=(16)
+cfn=(61)
+calls=1 0 0
+444 1070 29560
+
+fl=(3)
+fn=(27)
+319 39 -128
+cfl=(3)
+cfn=(24)
+calls=1 0 0
+321 183 128
+cfl=(3)
+cfn=(26)
+calls=1 0 0
+322 1538 60792
+
+fl=(2)
+fn=(5)
+194 21 0
+cfl=(3)
+cfn=(27)
+calls=1 0 0
+194 1761 60792
+
+fl=(2)
+fn=(8)
+34 0 0
+
+fl=(15)
+fn=(62) Monolog\Formatter\LineFormatter->__construct
+31 20 0
+cfl=(2)
+cfn=(8)
+calls=1 0 0
+34 0 0
+
+fl=(16)
+fn=(62)
+39 27 0
+cfl=(15)
+cfn=(62)
+calls=1 0 0
+44 20 0
+
+fl=(10)
+fn=(63) Monolog\Handler\StreamHandler->getDefaultFormatter
+192 42 128
+cfl=(2)
+cfn=(5)
+calls=1 0 0
+194 1783 60792
+cfl=(16)
+cfn=(62)
+calls=1 0 0
+194 48 0
+
+fl=(10)
+fn=(64) Monolog\Handler\StreamHandler->getFormatter
+110 25 0
+cfl=(10)
+cfn=(63)
+calls=1 0 0
+113 1873 60920
+
+fl=(2)
+fn=(65) php::is_scalar
+65 0 0
+
+fl=(2)
+fn=(66) php::is_array
+78 0 0
+
+fl=(2)
+fn=(65)
+65 0 0
+
+fl=(2)
+fn=(67) php::is_float
+66 0 0
+
+fl=(15)
+fn=(68) Monolog\Formatter\LineFormatter->normalize
+59 34 0
+cfl=(2)
+cfn=(65)
+calls=1 0 0
+65 0 0
+cfl=(2)
+cfn=(67)
+calls=1 0 0
+66 0 0
+
+fl=(2)
+fn=(65)
+65 0 0
+
+fl=(2)
+fn=(66)
+78 0 0
+
+fl=(15)
+fn=(68)
+59 35 0
+cfl=(2)
+cfn=(65)
+calls=1 0 0
+65 0 0
+cfl=(2)
+cfn=(66)
+calls=1 0 0
+78 0 0
+
+fl=(2)
+fn=(65)
+65 0 0
+
+fl=(2)
+fn=(67)
+66 0 0
+
+fl=(15)
+fn=(68)
+59 32 0
+cfl=(2)
+cfn=(65)
+calls=1 0 0
+65 0 0
+cfl=(2)
+cfn=(67)
+calls=1 0 0
+66 0 0
+
+fl=(2)
+fn=(65)
+65 0 0
+
+fl=(2)
+fn=(67)
+66 0 0
+
+fl=(15)
+fn=(68)
+59 31 0
+cfl=(2)
+cfn=(65)
+calls=1 0 0
+65 0 0
+cfl=(2)
+cfn=(67)
+calls=1 0 0
+66 0 0
+
+fl=(2)
+fn=(65)
+65 0 0
+
+fl=(2)
+fn=(67)
+66 0 0
+
+fl=(15)
+fn=(68)
+59 30 0
+cfl=(2)
+cfn=(65)
+calls=1 0 0
+65 0 0
+cfl=(2)
+cfn=(67)
+calls=1 0 0
+66 0 0
+
+fl=(2)
+fn=(65)
+65 0 0
+
+fl=(2)
+fn=(66)
+78 0 0
+
+fl=(2)
+fn=(69) php::DateTime->format
+95 5 256
+
+fl=(15)
+fn=(68)
+59 46 0
+cfl=(2)
+cfn=(65)
+calls=1 0 0
+65 0 0
+cfl=(2)
+cfn=(66)
+calls=1 0 0
+78 0 0
+cfl=(2)
+cfn=(69)
+calls=1 0 0
+95 5 256
+
+fl=(2)
+fn=(65)
+65 0 0
+
+fl=(2)
+fn=(66)
+78 0 0
+
+fl=(15)
+fn=(68)
+59 28 0
+cfl=(2)
+cfn=(65)
+calls=1 0 0
+65 0 0
+cfl=(2)
+cfn=(66)
+calls=1 0 0
+78 0 0
+
+fl=(15)
+fn=(68)
+59 231 376
+cfl=(2)
+cfn=(65)
+calls=1 0 0
+65 0 0
+cfl=(2)
+cfn=(66)
+calls=1 0 0
+78 0 0
+cfl=(15)
+cfn=(68)
+calls=1 0 0
+88 34 0
+cfl=(15)
+cfn=(68)
+calls=1 0 0
+88 35 0
+cfl=(15)
+cfn=(68)
+calls=1 0 0
+88 32 0
+cfl=(15)
+cfn=(68)
+calls=1 0 0
+88 32 0
+cfl=(15)
+cfn=(68)
+calls=1 0 0
+88 31 0
+cfl=(15)
+cfn=(68)
+calls=1 0 0
+88 51 256
+cfl=(15)
+cfn=(68)
+calls=1 0 0
+88 28 0
+
+fl=(15)
+fn=(70) Monolog\Formatter\LineFormatter->format
+42 38 0
+cfl=(15)
+cfn=(68)
+calls=1 0 0
+44 479 632
+
+fl=(2)
+fn=(71) php::strpos
+102 0 0
+
+fl=(2)
+fn=(72) php::is_bool
+154 0 0
+
+fl=(2)
+fn=(65)
+158 0 0
+
+fl=(16)
+fn=(73) Monolog\Formatter\LineFormatter->convertToString
+152 68 0
+cfl=(2)
+cfn=(72)
+calls=1 0 0
+154 0 0
+cfl=(2)
+cfn=(65)
+calls=1 0 0
+158 0 0
+
+fl=(2)
+fn=(74) php::str_replace
+179 9 0
+
+fl=(16)
+fn=(75) Monolog\Formatter\LineFormatter->replaceNewlines
+169 18 0
+cfl=(2)
+cfn=(74)
+calls=1 0 0
+179 9 0
+
+fl=(16)
+fn=(76) Monolog\Formatter\LineFormatter->stringify
+125 40 0
+cfl=(16)
+cfn=(73)
+calls=1 0 0
+127 69 0
+cfl=(16)
+cfn=(75)
+calls=1 0 0
+127 27 0
+
+fl=(2)
+fn=(74)
+103 2 160
+
+fl=(2)
+fn=(71)
+102 0 0
+
+fl=(2)
+fn=(72)
+154 0 0
+
+fl=(2)
+fn=(65)
+158 1 0
+
+fl=(2)
+fn=(77) php::version_compare
+162 4 0
+
+fl=(2)
+fn=(19)
+373 0 40
+
+fl=(2)
+fn=(20)
+378 0 0
+
+fl=(2)
+fn=(21)
+379 0 32
+
+fl=(2)
+fn=(21)
+382 0 40
+
+fl=(2)
+fn=(22)
+384 5 0
+
+fl=(3)
+fn=(23)
+370 81 0
+cfl=(2)
+cfn=(19)
+calls=1 0 0
+373 0 40
+cfl=(2)
+cfn=(20)
+calls=1 0 0
+378 0 0
+cfl=(2)
+cfn=(21)
+calls=1 0 0
+379 0 32
+cfl=(2)
+cfn=(21)
+calls=1 0 0
+382 0 40
+cfl=(2)
+cfn=(22)
+calls=1 0 0
+384 5 0
+
+fl=(3)
+fn=(24)
+335 31 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+351 87 112
+
+fl=(17) /var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Utils.php
+fn=(78) include::/var/www/mysite.local/vendor/monolog/monolog/src/Monolog/Utils.php
+1 2 0
+
+fl=(3)
+fn=(26)
+442 253 23744
+cfl=(17)
+cfn=(78)
+calls=1 0 0
+444 2 0
+
+fl=(3)
+fn=(27)
+319 36 -112
+cfl=(3)
+cfn=(24)
+calls=1 0 0
+321 119 112
+cfl=(3)
+cfn=(26)
+calls=1 0 0
+322 255 23744
+
+fl=(2)
+fn=(5)
+174 23 0
+cfl=(3)
+cfn=(27)
+calls=1 0 0
+174 411 23744
+
+fl=(2)
+fn=(77)
+37 0 0
+
+fl=(2)
+fn=(79) php::json_encode
+42 14 256
+
+fl=(17)
+fn=(80) Monolog\Utils::jsonEncode
+35 40 0
+cfl=(2)
+cfn=(77)
+calls=1 0 0
+37 0 0
+cfl=(2)
+cfn=(79)
+calls=1 0 0
+42 14 256
+
+fl=(15)
+fn=(81) Monolog\Formatter\LineFormatter->toJson
+172 42 0
+cfl=(2)
+cfn=(5)
+calls=1 0 0
+174 435 23744
+cfl=(17)
+cfn=(80)
+calls=1 0 0
+174 55 256
+
+fl=(16)
+fn=(73)
+152 66 0
+cfl=(2)
+cfn=(72)
+calls=1 0 0
+154 0 0
+cfl=(2)
+cfn=(65)
+calls=1 0 0
+158 1 0
+cfl=(2)
+cfn=(77)
+calls=1 0 0
+162 4 0
+cfl=(15)
+cfn=(81)
+calls=1 0 0
+163 533 24000
+
+fl=(2)
+fn=(74)
+179 0 0
+
+fl=(16)
+fn=(75)
+169 17 0
+cfl=(2)
+cfn=(74)
+calls=1 0 0
+179 0 0
+
+fl=(16)
+fn=(76)
+125 42 0
+cfl=(16)
+cfn=(73)
+calls=1 0 0
+127 606 24000
+cfl=(16)
+cfn=(75)
+calls=1 0 0
+127 18 0
+
+fl=(2)
+fn=(74)
+103 0 128
+
+fl=(2)
+fn=(71)
+102 1 0
+
+fl=(2)
+fn=(71)
+102 0 0
+
+fl=(2)
+fn=(72)
+154 0 0
+
+fl=(2)
+fn=(65)
+158 1 0
+
+fl=(16)
+fn=(73)
+152 28 0
+cfl=(2)
+cfn=(72)
+calls=1 0 0
+154 0 0
+cfl=(2)
+cfn=(65)
+calls=1 0 0
+158 1 0
+
+fl=(2)
+fn=(74)
+179 1 0
+
+fl=(16)
+fn=(75)
+169 15 0
+cfl=(2)
+cfn=(74)
+calls=1 0 0
+179 1 0
+
+fl=(16)
+fn=(76)
+125 35 0
+cfl=(16)
+cfn=(73)
+calls=1 0 0
+127 30 0
+cfl=(16)
+cfn=(75)
+calls=1 0 0
+127 17 0
+
+fl=(2)
+fn=(74)
+103 2 112
+
+fl=(2)
+fn=(71)
+102 1 0
+
+fl=(2)
+fn=(72)
+154 0 0
+
+fl=(2)
+fn=(65)
+158 1 0
+
+fl=(16)
+fn=(73)
+152 27 0
+cfl=(2)
+cfn=(72)
+calls=1 0 0
+154 0 0
+cfl=(2)
+cfn=(65)
+calls=1 0 0
+158 1 0
+
+fl=(2)
+fn=(74)
+179 0 0
+
+fl=(16)
+fn=(75)
+169 17 0
+cfl=(2)
+cfn=(74)
+calls=1 0 0
+179 0 0
+
+fl=(16)
+fn=(76)
+125 35 0
+cfl=(16)
+cfn=(73)
+calls=1 0 0
+127 29 0
+cfl=(16)
+cfn=(75)
+calls=1 0 0
+127 18 0
+
+fl=(2)
+fn=(74)
+103 0 112
+
+fl=(2)
+fn=(71)
+102 0 0
+
+fl=(2)
+fn=(72)
+154 0 0
+
+fl=(2)
+fn=(65)
+158 0 0
+
+fl=(16)
+fn=(73)
+152 28 0
+cfl=(2)
+cfn=(72)
+calls=1 0 0
+154 0 0
+cfl=(2)
+cfn=(65)
+calls=1 0 0
+158 0 0
+
+fl=(2)
+fn=(74)
+179 0 0
+
+fl=(16)
+fn=(75)
+169 18 0
+cfl=(2)
+cfn=(74)
+calls=1 0 0
+179 0 0
+
+fl=(16)
+fn=(76)
+125 35 0
+cfl=(16)
+cfn=(73)
+calls=1 0 0
+127 28 0
+cfl=(16)
+cfn=(75)
+calls=1 0 0
+127 18 0
+
+fl=(2)
+fn=(74)
+103 0 128
+
+fl=(2)
+fn=(71)
+102 0 0
+
+fl=(2)
+fn=(72)
+154 0 0
+
+fl=(2)
+fn=(65)
+158 1 0
+
+fl=(2)
+fn=(77)
+162 2 0
+
+fl=(2)
+fn=(77)
+37 0 0
+
+fl=(2)
+fn=(79)
+42 0 256
+
+fl=(17)
+fn=(80)
+35 38 0
+cfl=(2)
+cfn=(77)
+calls=1 0 0
+37 0 0
+cfl=(2)
+cfn=(79)
+calls=1 0 0
+42 0 256
+
+fl=(15)
+fn=(81)
+172 20 0
+cfl=(17)
+cfn=(80)
+calls=1 0 0
+174 39 256
+
+fl=(16)
+fn=(73)
+152 61 0
+cfl=(2)
+cfn=(72)
+calls=1 0 0
+154 0 0
+cfl=(2)
+cfn=(65)
+calls=1 0 0
+158 1 0
+cfl=(2)
+cfn=(77)
+calls=1 0 0
+162 2 0
+cfl=(15)
+cfn=(81)
+calls=1 0 0
+163 60 256
+
+fl=(2)
+fn=(74)
+179 0 0
+
+fl=(16)
+fn=(75)
+169 16 0
+cfl=(2)
+cfn=(74)
+calls=1 0 0
+179 0 0
+
+fl=(16)
+fn=(76)
+125 42 0
+cfl=(16)
+cfn=(73)
+calls=1 0 0
+127 126 256
+cfl=(16)
+cfn=(75)
+calls=1 0 0
+127 17 0
+
+fl=(2)
+fn=(74)
+103 0 112
+
+fl=(2)
+fn=(71)
+108 0 0
+
+fl=(16)
+fn=(70)
+68 418 -1784
+cfl=(15)
+cfn=(70)
+calls=1 0 0
+70 518 632
+cfl=(2)
+cfn=(71)
+calls=1 0 0
+102 0 0
+cfl=(16)
+cfn=(76)
+calls=1 0 0
+103 137 0
+cfl=(2)
+cfn=(74)
+calls=1 0 0
+103 2 160
+cfl=(2)
+cfn=(71)
+calls=1 0 0
+102 0 0
+cfl=(16)
+cfn=(76)
+calls=1 0 0
+103 667 24000
+cfl=(2)
+cfn=(74)
+calls=1 0 0
+103 0 128
+cfl=(2)
+cfn=(71)
+calls=1 0 0
+102 1 0
+cfl=(2)
+cfn=(71)
+calls=1 0 0
+102 0 0
+cfl=(16)
+cfn=(76)
+calls=1 0 0
+103 82 0
+cfl=(2)
+cfn=(74)
+calls=1 0 0
+103 2 112
+cfl=(2)
+cfn=(71)
+calls=1 0 0
+102 1 0
+cfl=(16)
+cfn=(76)
+calls=1 0 0
+103 82 0
+cfl=(2)
+cfn=(74)
+calls=1 0 0
+103 0 112
+cfl=(2)
+cfn=(71)
+calls=1 0 0
+102 0 0
+cfl=(16)
+cfn=(76)
+calls=1 0 0
+103 82 0
+cfl=(2)
+cfn=(74)
+calls=1 0 0
+103 0 128
+cfl=(2)
+cfn=(71)
+calls=1 0 0
+102 0 0
+cfl=(16)
+cfn=(76)
+calls=1 0 0
+103 185 256
+cfl=(2)
+cfn=(74)
+calls=1 0 0
+103 0 112
+cfl=(2)
+cfn=(71)
+calls=1 0 0
+108 0 0
+
+fl=(2)
+fn=(41)
+94 0 0
+
+fl=(2)
+fn=(71)
+146 0 0
+
+fl=(2)
+fn=(82) php::dirname
+148 0 40
+
+fl=(12)
+fn=(83) Monolog\Handler\StreamHandler->getDirFromStream
+144 32 0
+cfl=(2)
+cfn=(71)
+calls=1 0 0
+146 0 0
+cfl=(2)
+cfn=(82)
+calls=1 0 0
+148 0 40
+
+fl=(2)
+fn=(84) php::is_dir
+166 6 8
+
+fl=(12)
+fn=(85) Monolog\Handler\StreamHandler->createDir
+158 37 -40
+cfl=(12)
+cfn=(83)
+calls=1 0 0
+165 32 40
+cfl=(2)
+cfn=(84)
+calls=1 0 0
+166 6 8
+
+fl=(2)
+fn=(86) php::set_error_handler
+100 4 0
+
+fl=(2)
+fn=(87) php::fopen
+101 21 568
+
+fl=(2)
+fn=(88) php::restore_error_handler
+105 0 -376
+
+fl=(2)
+fn=(41)
+106 0 0
+
+fl=(2)
+fn=(89) php::fwrite
+131 9 0
+
+fl=(12)
+fn=(90) Monolog\Handler\StreamHandler->streamWrite
+129 18 0
+cfl=(2)
+cfn=(89)
+calls=1 0 0
+131 9 0
+
+fl=(12)
+fn=(91) Monolog\Handler\StreamHandler->write
+92 123 376
+cfl=(2)
+cfn=(41)
+calls=1 0 0
+94 0 0
+cfl=(12)
+cfn=(85)
+calls=1 0 0
+98 77 8
+cfl=(2)
+cfn=(86)
+calls=1 0 0
+100 4 0
+cfl=(2)
+cfn=(87)
+calls=1 0 0
+101 21 568
+cfl=(2)
+cfn=(88)
+calls=1 0 0
+105 0 -376
+cfl=(2)
+cfn=(41)
+calls=1 0 0
+106 0 0
+cfl=(12)
+cfn=(90)
+calls=1 0 0
+117 28 0
+
+fl=(11)
+fn=(92) Monolog\Handler\StreamHandler->handle
+29 163 -112
+cfl=(10)
+cfn=(52)
+calls=1 0 0
+31 1 0
+cfl=(11)
+cfn=(58)
+calls=1 0 0
+35 2 0
+cfl=(10)
+cfn=(64)
+calls=1 0 0
+37 1899 60920
+cfl=(16)
+cfn=(70)
+calls=1 0 0
+37 2187 23856
+cfl=(12)
+cfn=(91)
+calls=1 0 0
+39 255 576
+
+fl=(2)
+fn=(93) php::next
+348 0 0
+
+fl=(2)
+fn=(51)
+343 0 0
+
+fl=(8)
+fn=(94) Monolog\Logger->addRecord
+292 319 -248
+cfl=(8)
+cfn=(49)
+calls=1 0 0
+298 4 0
+cfl=(2)
+cfn=(50)
+calls=1 0 0
+302 0 0
+cfl=(2)
+cfn=(51)
+calls=1 0 0
+303 1 0
+cfl=(10)
+cfn=(52)
+calls=1 0 0
+304 56 0
+cfl=(2)
+cfn=(53)
+calls=1 0 0
+305 0 0
+cfl=(2)
+cfn=(54)
+calls=1 0 0
+317 1 40
+cfl=(2)
+cfn=(55)
+calls=1 0 0
+317 77 0
+cfl=(2)
+cfn=(56)
+calls=1 0 0
+324 19 288
+cfl=(2)
+cfn=(57)
+calls=1 0 0
+326 3 0
+cfl=(2)
+cfn=(51)
+calls=1 0 0
+343 0 0
+cfl=(11)
+cfn=(92)
+calls=1 0 0
+344 4508 85240
+cfl=(2)
+cfn=(93)
+calls=1 0 0
+348 0 0
+cfl=(2)
+cfn=(51)
+calls=1 0 0
+343 0 0
+
+fl=(8)
+fn=(95) Monolog\Logger->info
+640 119 0
+cfl=(8)
+cfn=(94)
+calls=1 0 0
+642 4993 85320
+
+fl=(2)
+fn=(45)
+10 0 0
+
+fl=(2)
+fn=(46)
+11 5 256
+
+fl=(2)
+fn=(47)
+17 0 0
+
+fl=(13)
+fn=(48)
+8 41 376
+cfl=(2)
+cfn=(45)
+calls=1 0 0
+10 0 0
+cfl=(2)
+cfn=(46)
+calls=1 0 0
+11 5 256
+cfl=(2)
+cfn=(47)
+calls=1 0 0
+17 0 0
+
+fl=(8)
+fn=(49)
+513 1 0
+
+fl=(2)
+fn=(50)
+302 0 0
+
+fl=(2)
+fn=(51)
+303 0 0
+
+fl=(10)
+fn=(52)
+48 1 0
+
+fl=(2)
+fn=(53)
+305 0 0
+
+fl=(2)
+fn=(56)
+324 4 264
+
+fl=(2)
+fn=(57)
+326 0 0
+
+fl=(2)
+fn=(51)
+343 0 0
+
+fl=(10)
+fn=(52)
+48 0 0
+
+fl=(11)
+fn=(58)
+58 0 0
+
+fl=(10)
+fn=(64)
+110 0 0
+
+fl=(2)
+fn=(65)
+65 1 0
+
+fl=(2)
+fn=(66)
+78 0 0
+
+fl=(2)
+fn=(65)
+65 0 0
+
+fl=(2)
+fn=(67)
+66 0 0
+
+fl=(15)
+fn=(68)
+59 20 0
+cfl=(2)
+cfn=(65)
+calls=1 0 0
+65 0 0
+cfl=(2)
+cfn=(67)
+calls=1 0 0
+66 0 0
+
+fl=(2)
+fn=(65)
+65 0 0
+
+fl=(2)
+fn=(66)
+78 0 0
+
+fl=(15)
+fn=(68)
+59 20 0
+cfl=(2)
+cfn=(65)
+calls=1 0 0
+65 0 0
+cfl=(2)
+cfn=(66)
+calls=1 0 0
+78 0 0
+
+fl=(2)
+fn=(65)
+65 0 0
+
+fl=(2)
+fn=(67)
+66 0 0
+
+fl=(15)
+fn=(68)
+59 19 0
+cfl=(2)
+cfn=(65)
+calls=1 0 0
+65 0 0
+cfl=(2)
+cfn=(67)
+calls=1 0 0
+66 0 0
+
+fl=(2)
+fn=(65)
+65 0 0
+
+fl=(2)
+fn=(67)
+66 0 0
+
+fl=(15)
+fn=(68)
+59 20 0
+cfl=(2)
+cfn=(65)
+calls=1 0 0
+65 0 0
+cfl=(2)
+cfn=(67)
+calls=1 0 0
+66 0 0
+
+fl=(2)
+fn=(65)
+65 0 0
+
+fl=(2)
+fn=(67)
+66 0 0
+
+fl=(15)
+fn=(68)
+59 19 0
+cfl=(2)
+cfn=(65)
+calls=1 0 0
+65 0 0
+cfl=(2)
+cfn=(67)
+calls=1 0 0
+66 0 0
+
+fl=(2)
+fn=(65)
+65 0 0
+
+fl=(2)
+fn=(66)
+78 0 0
+
+fl=(2)
+fn=(69)
+95 3 256
+
+fl=(15)
+fn=(68)
+59 30 0
+cfl=(2)
+cfn=(65)
+calls=1 0 0
+65 0 0
+cfl=(2)
+cfn=(66)
+calls=1 0 0
+78 0 0
+cfl=(2)
+cfn=(69)
+calls=1 0 0
+95 3 256
+
+fl=(2)
+fn=(65)
+65 0 0
+
+fl=(2)
+fn=(66)
+78 0 0
+
+fl=(15)
+fn=(68)
+59 19 0
+cfl=(2)
+cfn=(65)
+calls=1 0 0
+65 0 0
+cfl=(2)
+cfn=(66)
+calls=1 0 0
+78 0 0
+
+fl=(15)
+fn=(68)
+59 158 376
+cfl=(2)
+cfn=(65)
+calls=1 0 0
+65 1 0
+cfl=(2)
+cfn=(66)
+calls=1 0 0
+78 0 0
+cfl=(15)
+cfn=(68)
+calls=1 0 0
+88 20 0
+cfl=(15)
+cfn=(68)
+calls=1 0 0
+88 20 0
+cfl=(15)
+cfn=(68)
+calls=1 0 0
+88 19 0
+cfl=(15)
+cfn=(68)
+calls=1 0 0
+88 20 0
+cfl=(15)
+cfn=(68)
+calls=1 0 0
+88 20 0
+cfl=(15)
+cfn=(68)
+calls=1 0 0
+88 33 256
+cfl=(15)
+cfn=(68)
+calls=1 0 0
+88 19 0
+
+fl=(15)
+fn=(70)
+42 22 0
+cfl=(15)
+cfn=(68)
+calls=1 0 0
+44 313 632
+
+fl=(2)
+fn=(71)
+102 0 0
+
+fl=(2)
+fn=(72)
+154 0 0
+
+fl=(2)
+fn=(65)
+158 0 0
+
+fl=(16)
+fn=(73)
+152 20 0
+cfl=(2)
+cfn=(72)
+calls=1 0 0
+154 0 0
+cfl=(2)
+cfn=(65)
+calls=1 0 0
+158 0 0
+
+fl=(2)
+fn=(74)
+179 0 0
+
+fl=(16)
+fn=(75)
+169 12 0
+cfl=(2)
+cfn=(74)
+calls=1 0 0
+179 0 0
+
+fl=(16)
+fn=(76)
+125 25 0
+cfl=(16)
+cfn=(73)
+calls=1 0 0
+127 20 0
+cfl=(16)
+cfn=(75)
+calls=1 0 0
+127 13 0
+
+fl=(2)
+fn=(74)
+103 2 160
+
+fl=(2)
+fn=(71)
+102 0 0
+
+fl=(2)
+fn=(72)
+154 0 0
+
+fl=(2)
+fn=(65)
+158 0 0
+
+fl=(2)
+fn=(77)
+162 1 0
+
+fl=(2)
+fn=(77)
+37 0 0
+
+fl=(2)
+fn=(79)
+42 1 256
+
+fl=(17)
+fn=(80)
+35 23 0
+cfl=(2)
+cfn=(77)
+calls=1 0 0
+37 0 0
+cfl=(2)
+cfn=(79)
+calls=1 0 0
+42 1 256
+
+fl=(15)
+fn=(81)
+172 15 0
+cfl=(17)
+cfn=(80)
+calls=1 0 0
+174 25 256
+
+fl=(16)
+fn=(73)
+152 43 0
+cfl=(2)
+cfn=(72)
+calls=1 0 0
+154 0 0
+cfl=(2)
+cfn=(65)
+calls=1 0 0
+158 0 0
+cfl=(2)
+cfn=(77)
+calls=1 0 0
+162 1 0
+cfl=(15)
+cfn=(81)
+calls=1 0 0
+163 41 256
+
+fl=(2)
+fn=(74)
+179 0 0
+
+fl=(16)
+fn=(75)
+169 11 0
+cfl=(2)
+cfn=(74)
+calls=1 0 0
+179 0 0
+
+fl=(16)
+fn=(76)
+125 30 0
+cfl=(16)
+cfn=(73)
+calls=1 0 0
+127 88 256
+cfl=(16)
+cfn=(75)
+calls=1 0 0
+127 11 0
+
+fl=(2)
+fn=(74)
+103 1 128
+
+fl=(2)
+fn=(71)
+102 0 0
+
+fl=(2)
+fn=(71)
+102 0 0
+
+fl=(2)
+fn=(72)
+154 0 0
+
+fl=(2)
+fn=(65)
+158 0 0
+
+fl=(16)
+fn=(73)
+152 19 0
+cfl=(2)
+cfn=(72)
+calls=1 0 0
+154 0 0
+cfl=(2)
+cfn=(65)
+calls=1 0 0
+158 0 0
+
+fl=(2)
+fn=(74)
+179 0 0
+
+fl=(16)
+fn=(75)
+169 11 0
+cfl=(2)
+cfn=(74)
+calls=1 0 0
+179 0 0
+
+fl=(16)
+fn=(76)
+125 25 0
+cfl=(16)
+cfn=(73)
+calls=1 0 0
+127 19 0
+cfl=(16)
+cfn=(75)
+calls=1 0 0
+127 11 0
+
+fl=(2)
+fn=(74)
+103 0 112
+
+fl=(2)
+fn=(71)
+102 0 0
+
+fl=(2)
+fn=(72)
+154 0 0
+
+fl=(2)
+fn=(65)
+158 0 0
+
+fl=(16)
+fn=(73)
+152 19 0
+cfl=(2)
+cfn=(72)
+calls=1 0 0
+154 0 0
+cfl=(2)
+cfn=(65)
+calls=1 0 0
+158 0 0
+
+fl=(2)
+fn=(74)
+179 0 0
+
+fl=(16)
+fn=(75)
+169 14 0
+cfl=(2)
+cfn=(74)
+calls=1 0 0
+179 0 0
+
+fl=(16)
+fn=(76)
+125 23 0
+cfl=(16)
+cfn=(73)
+calls=1 0 0
+127 20 0
+cfl=(16)
+cfn=(75)
+calls=1 0 0
+127 14 0
+
+fl=(2)
+fn=(74)
+103 0 112
+
+fl=(2)
+fn=(71)
+102 0 0
+
+fl=(2)
+fn=(72)
+154 0 0
+
+fl=(2)
+fn=(65)
+158 0 0
+
+fl=(16)
+fn=(73)
+152 18 0
+cfl=(2)
+cfn=(72)
+calls=1 0 0
+154 0 0
+cfl=(2)
+cfn=(65)
+calls=1 0 0
+158 0 0
+
+fl=(2)
+fn=(74)
+179 0 0
+
+fl=(16)
+fn=(75)
+169 12 0
+cfl=(2)
+cfn=(74)
+calls=1 0 0
+179 0 0
+
+fl=(16)
+fn=(76)
+125 24 0
+cfl=(16)
+cfn=(73)
+calls=1 0 0
+127 19 0
+cfl=(16)
+cfn=(75)
+calls=1 0 0
+127 12 0
+
+fl=(2)
+fn=(74)
+103 0 128
+
+fl=(2)
+fn=(71)
+102 0 0
+
+fl=(2)
+fn=(72)
+154 0 0
+
+fl=(2)
+fn=(65)
+158 0 0
+
+fl=(2)
+fn=(77)
+162 1 0
+
+fl=(2)
+fn=(77)
+37 0 0
+
+fl=(2)
+fn=(79)
+42 0 256
+
+fl=(17)
+fn=(80)
+35 28 0
+cfl=(2)
+cfn=(77)
+calls=1 0 0
+37 0 0
+cfl=(2)
+cfn=(79)
+calls=1 0 0
+42 0 256
+
+fl=(15)
+fn=(81)
+172 13 0
+cfl=(17)
+cfn=(80)
+calls=1 0 0
+174 29 256
+
+fl=(16)
+fn=(73)
+152 41 0
+cfl=(2)
+cfn=(72)
+calls=1 0 0
+154 0 0
+cfl=(2)
+cfn=(65)
+calls=1 0 0
+158 0 0
+cfl=(2)
+cfn=(77)
+calls=1 0 0
+162 1 0
+cfl=(15)
+cfn=(81)
+calls=1 0 0
+163 42 256
+
+fl=(2)
+fn=(74)
+179 0 0
+
+fl=(16)
+fn=(75)
+169 12 0
+cfl=(2)
+cfn=(74)
+calls=1 0 0
+179 0 0
+
+fl=(16)
+fn=(76)
+125 28 0
+cfl=(16)
+cfn=(73)
+calls=1 0 0
+127 86 256
+cfl=(16)
+cfn=(75)
+calls=1 0 0
+127 12 0
+
+fl=(2)
+fn=(74)
+103 0 112
+
+fl=(2)
+fn=(71)
+108 0 0
+
+fl=(16)
+fn=(70)
+68 240 -1784
+cfl=(15)
+cfn=(70)
+calls=1 0 0
+70 335 632
+cfl=(2)
+cfn=(71)
+calls=1 0 0
+102 0 0
+cfl=(16)
+cfn=(76)
+calls=1 0 0
+103 59 0
+cfl=(2)
+cfn=(74)
+calls=1 0 0
+103 2 160
+cfl=(2)
+cfn=(71)
+calls=1 0 0
+102 0 0
+cfl=(16)
+cfn=(76)
+calls=1 0 0
+103 130 256
+cfl=(2)
+cfn=(74)
+calls=1 0 0
+103 1 128
+cfl=(2)
+cfn=(71)
+calls=1 0 0
+102 0 0
+cfl=(2)
+cfn=(71)
+calls=1 0 0
+102 0 0
+cfl=(16)
+cfn=(76)
+calls=1 0 0
+103 56 0
+cfl=(2)
+cfn=(74)
+calls=1 0 0
+103 0 112
+cfl=(2)
+cfn=(71)
+calls=1 0 0
+102 0 0
+cfl=(16)
+cfn=(76)
+calls=1 0 0
+103 57 0
+cfl=(2)
+cfn=(74)
+calls=1 0 0
+103 0 112
+cfl=(2)
+cfn=(71)
+calls=1 0 0
+102 0 0
+cfl=(16)
+cfn=(76)
+calls=1 0 0
+103 55 0
+cfl=(2)
+cfn=(74)
+calls=1 0 0
+103 0 128
+cfl=(2)
+cfn=(71)
+calls=1 0 0
+102 0 0
+cfl=(16)
+cfn=(76)
+calls=1 0 0
+103 127 256
+cfl=(2)
+cfn=(74)
+calls=1 0 0
+103 0 112
+cfl=(2)
+cfn=(71)
+calls=1 0 0
+108 0 0
+
+fl=(2)
+fn=(41)
+94 0 0
+
+fl=(2)
+fn=(89)
+131 5 0
+
+fl=(12)
+fn=(90)
+129 12 0
+cfl=(2)
+cfn=(89)
+calls=1 0 0
+131 5 0
+
+fl=(12)
+fn=(91)
+92 25 0
+cfl=(2)
+cfn=(41)
+calls=1 0 0
+94 0 0
+cfl=(12)
+cfn=(90)
+calls=1 0 0
+117 17 0
+
+fl=(11)
+fn=(92)
+29 90 -112
+cfl=(10)
+cfn=(52)
+calls=1 0 0
+31 0 0
+cfl=(11)
+cfn=(58)
+calls=1 0 0
+35 0 0
+cfl=(10)
+cfn=(64)
+calls=1 0 0
+37 0 0
+cfl=(16)
+cfn=(70)
+calls=1 0 0
+37 1072 112
+cfl=(12)
+cfn=(91)
+calls=1 0 0
+39 42 0
+
+fl=(2)
+fn=(93)
+348 0 0
+
+fl=(2)
+fn=(51)
+343 0 0
+
+fl=(8)
+fn=(94)
+292 140 -264
+cfl=(8)
+cfn=(49)
+calls=1 0 0
+298 1 0
+cfl=(2)
+cfn=(50)
+calls=1 0 0
+302 0 0
+cfl=(2)
+cfn=(51)
+calls=1 0 0
+303 0 0
+cfl=(10)
+cfn=(52)
+calls=1 0 0
+304 1 0
+cfl=(2)
+cfn=(53)
+calls=1 0 0
+305 0 0
+cfl=(2)
+cfn=(56)
+calls=1 0 0
+324 4 264
+cfl=(2)
+cfn=(57)
+calls=1 0 0
+326 0 0
+cfl=(2)
+cfn=(51)
+calls=1 0 0
+343 0 0
+cfl=(11)
+cfn=(92)
+calls=1 0 0
+344 1209 0
+cfl=(2)
+cfn=(93)
+calls=1 0 0
+348 0 0
+cfl=(2)
+cfn=(51)
+calls=1 0 0
+343 0 0
+
+fl=(8)
+fn=(95)
+640 30 0
+cfl=(8)
+cfn=(94)
+calls=1 0 0
+642 1358 0
+
+fl=(2)
+fn=(45)
+10 0 0
+
+fl=(2)
+fn=(46)
+11 2 256
+
+fl=(2)
+fn=(47)
+17 0 0
+
+fl=(13)
+fn=(48)
+8 29 376
+cfl=(2)
+cfn=(45)
+calls=1 0 0
+10 0 0
+cfl=(2)
+cfn=(46)
+calls=1 0 0
+11 2 256
+cfl=(2)
+cfn=(47)
+calls=1 0 0
+17 0 0
+
+fl=(2)
+fn=(96) php::count
+27 3 0
+
+fl=(13)
+fn=(97) Src\MyLogger::displayMemoryDifference
+24 29 56
+cfl=(13)
+cfn=(48)
+calls=1 0 0
+26 31 632
+cfl=(2)
+cfn=(96)
+calls=1 0 0
+27 3 0
+
+fl=(8)
+fn=(49)
+513 1 0
+
+fl=(2)
+fn=(50)
+302 0 0
+
+fl=(2)
+fn=(51)
+303 0 0
+
+fl=(10)
+fn=(52)
+48 1 0
+
+fl=(2)
+fn=(53)
+305 0 0
+
+fl=(2)
+fn=(56)
+324 3 264
+
+fl=(2)
+fn=(57)
+326 0 0
+
+fl=(2)
+fn=(51)
+343 0 0
+
+fl=(10)
+fn=(52)
+48 0 0
+
+fl=(11)
+fn=(58)
+58 0 0
+
+fl=(10)
+fn=(64)
+110 0 0
+
+fl=(2)
+fn=(65)
+65 0 0
+
+fl=(2)
+fn=(66)
+78 0 0
+
+fl=(2)
+fn=(65)
+65 0 0
+
+fl=(2)
+fn=(67)
+66 0 0
+
+fl=(15)
+fn=(68)
+59 19 0
+cfl=(2)
+cfn=(65)
+calls=1 0 0
+65 0 0
+cfl=(2)
+cfn=(67)
+calls=1 0 0
+66 0 0
+
+fl=(2)
+fn=(65)
+65 0 0
+
+fl=(2)
+fn=(66)
+78 0 0
+
+fl=(15)
+fn=(68)
+59 20 0
+cfl=(2)
+cfn=(65)
+calls=1 0 0
+65 0 0
+cfl=(2)
+cfn=(66)
+calls=1 0 0
+78 0 0
+
+fl=(2)
+fn=(65)
+65 0 0
+
+fl=(2)
+fn=(67)
+66 0 0
+
+fl=(15)
+fn=(68)
+59 18 0
+cfl=(2)
+cfn=(65)
+calls=1 0 0
+65 0 0
+cfl=(2)
+cfn=(67)
+calls=1 0 0
+66 0 0
+
+fl=(2)
+fn=(65)
+65 0 0
+
+fl=(2)
+fn=(67)
+66 0 0
+
+fl=(15)
+fn=(68)
+59 20 0
+cfl=(2)
+cfn=(65)
+calls=1 0 0
+65 0 0
+cfl=(2)
+cfn=(67)
+calls=1 0 0
+66 0 0
+
+fl=(2)
+fn=(65)
+65 0 0
+
+fl=(2)
+fn=(67)
+66 0 0
+
+fl=(15)
+fn=(68)
+59 19 0
+cfl=(2)
+cfn=(65)
+calls=1 0 0
+65 0 0
+cfl=(2)
+cfn=(67)
+calls=1 0 0
+66 0 0
+
+fl=(2)
+fn=(65)
+65 0 0
+
+fl=(2)
+fn=(66)
+78 0 0
+
+fl=(2)
+fn=(69)
+95 1 256
+
+fl=(15)
+fn=(68)
+59 29 0
+cfl=(2)
+cfn=(65)
+calls=1 0 0
+65 0 0
+cfl=(2)
+cfn=(66)
+calls=1 0 0
+78 0 0
+cfl=(2)
+cfn=(69)
+calls=1 0 0
+95 1 256
+
+fl=(2)
+fn=(65)
+65 0 0
+
+fl=(2)
+fn=(66)
+78 0 0
+
+fl=(15)
+fn=(68)
+59 20 0
+cfl=(2)
+cfn=(65)
+calls=1 0 0
+65 0 0
+cfl=(2)
+cfn=(66)
+calls=1 0 0
+78 0 0
+
+fl=(15)
+fn=(68)
+59 123 376
+cfl=(2)
+cfn=(65)
+calls=1 0 0
+65 0 0
+cfl=(2)
+cfn=(66)
+calls=1 0 0
+78 0 0
+cfl=(15)
+cfn=(68)
+calls=1 0 0
+88 20 0
+cfl=(15)
+cfn=(68)
+calls=1 0 0
+88 20 0
+cfl=(15)
+cfn=(68)
+calls=1 0 0
+88 18 0
+cfl=(15)
+cfn=(68)
+calls=1 0 0
+88 20 0
+cfl=(15)
+cfn=(68)
+calls=1 0 0
+88 19 0
+cfl=(15)
+cfn=(68)
+calls=1 0 0
+88 32 256
+cfl=(15)
+cfn=(68)
+calls=1 0 0
+88 20 0
+
+fl=(15)
+fn=(70)
+42 29 0
+cfl=(15)
+cfn=(68)
+calls=1 0 0
+44 275 632
+
+fl=(2)
+fn=(71)
+102 0 0
+
+fl=(2)
+fn=(72)
+154 0 0
+
+fl=(2)
+fn=(65)
+158 0 0
+
+fl=(16)
+fn=(73)
+152 17 0
+cfl=(2)
+cfn=(72)
+calls=1 0 0
+154 0 0
+cfl=(2)
+cfn=(65)
+calls=1 0 0
+158 0 0
+
+fl=(2)
+fn=(74)
+179 1 0
+
+fl=(16)
+fn=(75)
+169 11 0
+cfl=(2)
+cfn=(74)
+calls=1 0 0
+179 1 0
+
+fl=(16)
+fn=(76)
+125 26 0
+cfl=(16)
+cfn=(73)
+calls=1 0 0
+127 18 0
+cfl=(16)
+cfn=(75)
+calls=1 0 0
+127 12 0
+
+fl=(2)
+fn=(74)
+103 0 160
+
+fl=(2)
+fn=(71)
+102 0 0
+
+fl=(2)
+fn=(72)
+154 0 0
+
+fl=(2)
+fn=(65)
+158 0 0
+
+fl=(2)
+fn=(77)
+162 0 0
+
+fl=(2)
+fn=(77)
+37 0 0
+
+fl=(2)
+fn=(79)
+42 0 256
+
+fl=(17)
+fn=(80)
+35 23 0
+cfl=(2)
+cfn=(77)
+calls=1 0 0
+37 0 0
+cfl=(2)
+cfn=(79)
+calls=1 0 0
+42 0 256
+
+fl=(15)
+fn=(81)
+172 15 0
+cfl=(17)
+cfn=(80)
+calls=1 0 0
+174 24 256
+
+fl=(16)
+fn=(73)
+152 41 0
+cfl=(2)
+cfn=(72)
+calls=1 0 0
+154 0 0
+cfl=(2)
+cfn=(65)
+calls=1 0 0
+158 0 0
+cfl=(2)
+cfn=(77)
+calls=1 0 0
+162 0 0
+cfl=(15)
+cfn=(81)
+calls=1 0 0
+163 39 256
+
+fl=(2)
+fn=(74)
+179 1 0
+
+fl=(16)
+fn=(75)
+169 10 0
+cfl=(2)
+cfn=(74)
+calls=1 0 0
+179 1 0
+
+fl=(16)
+fn=(76)
+125 28 0
+cfl=(16)
+cfn=(73)
+calls=1 0 0
+127 82 256
+cfl=(16)
+cfn=(75)
+calls=1 0 0
+127 11 0
+
+fl=(2)
+fn=(74)
+103 0 128
+
+fl=(2)
+fn=(71)
+102 0 0
+
+fl=(2)
+fn=(71)
+102 0 0
+
+fl=(2)
+fn=(72)
+154 0 0
+
+fl=(2)
+fn=(65)
+158 0 0
+
+fl=(16)
+fn=(73)
+152 19 0
+cfl=(2)
+cfn=(72)
+calls=1 0 0
+154 0 0
+cfl=(2)
+cfn=(65)
+calls=1 0 0
+158 0 0
+
+fl=(2)
+fn=(74)
+179 0 0
+
+fl=(16)
+fn=(75)
+169 11 0
+cfl=(2)
+cfn=(74)
+calls=1 0 0
+179 0 0
+
+fl=(16)
+fn=(76)
+125 26 0
+cfl=(16)
+cfn=(73)
+calls=1 0 0
+127 19 0
+cfl=(16)
+cfn=(75)
+calls=1 0 0
+127 11 0
+
+fl=(2)
+fn=(74)
+103 0 128
+
+fl=(2)
+fn=(71)
+102 0 0
+
+fl=(2)
+fn=(72)
+154 0 0
+
+fl=(2)
+fn=(65)
+158 0 0
+
+fl=(16)
+fn=(73)
+152 42 0
+cfl=(2)
+cfn=(72)
+calls=1 0 0
+154 0 0
+cfl=(2)
+cfn=(65)
+calls=1 0 0
+158 0 0
+
+fl=(2)
+fn=(74)
+179 0 0
+
+fl=(16)
+fn=(75)
+169 11 0
+cfl=(2)
+cfn=(74)
+calls=1 0 0
+179 0 0
+
+fl=(16)
+fn=(76)
+125 25 0
+cfl=(16)
+cfn=(73)
+calls=1 0 0
+127 43 0
+cfl=(16)
+cfn=(75)
+calls=1 0 0
+127 12 0
+
+fl=(2)
+fn=(74)
+103 1 112
+
+fl=(2)
+fn=(71)
+102 0 0
+
+fl=(2)
+fn=(72)
+154 0 0
+
+fl=(2)
+fn=(65)
+158 0 0
+
+fl=(16)
+fn=(73)
+152 19 0
+cfl=(2)
+cfn=(72)
+calls=1 0 0
+154 0 0
+cfl=(2)
+cfn=(65)
+calls=1 0 0
+158 0 0
+
+fl=(2)
+fn=(74)
+179 0 0
+
+fl=(16)
+fn=(75)
+169 12 0
+cfl=(2)
+cfn=(74)
+calls=1 0 0
+179 0 0
+
+fl=(16)
+fn=(76)
+125 23 0
+cfl=(16)
+cfn=(73)
+calls=1 0 0
+127 19 0
+cfl=(16)
+cfn=(75)
+calls=1 0 0
+127 12 0
+
+fl=(2)
+fn=(74)
+103 0 128
+
+fl=(2)
+fn=(71)
+102 0 0
+
+fl=(2)
+fn=(72)
+154 0 0
+
+fl=(2)
+fn=(65)
+158 0 0
+
+fl=(2)
+fn=(77)
+162 0 0
+
+fl=(2)
+fn=(77)
+37 0 0
+
+fl=(2)
+fn=(79)
+42 0 256
+
+fl=(17)
+fn=(80)
+35 23 0
+cfl=(2)
+cfn=(77)
+calls=1 0 0
+37 0 0
+cfl=(2)
+cfn=(79)
+calls=1 0 0
+42 0 256
+
+fl=(15)
+fn=(81)
+172 13 0
+cfl=(17)
+cfn=(80)
+calls=1 0 0
+174 24 256
+
+fl=(16)
+fn=(73)
+152 43 0
+cfl=(2)
+cfn=(72)
+calls=1 0 0
+154 0 0
+cfl=(2)
+cfn=(65)
+calls=1 0 0
+158 0 0
+cfl=(2)
+cfn=(77)
+calls=1 0 0
+162 0 0
+cfl=(15)
+cfn=(81)
+calls=1 0 0
+163 37 256
+
+fl=(2)
+fn=(74)
+179 0 0
+
+fl=(16)
+fn=(75)
+169 11 0
+cfl=(2)
+cfn=(74)
+calls=1 0 0
+179 0 0
+
+fl=(16)
+fn=(76)
+125 30 0
+cfl=(16)
+cfn=(73)
+calls=1 0 0
+127 81 256
+cfl=(16)
+cfn=(75)
+calls=1 0 0
+127 11 0
+
+fl=(2)
+fn=(74)
+103 0 128
+
+fl=(2)
+fn=(71)
+108 0 0
+
+fl=(16)
+fn=(70)
+68 242 -1800
+cfl=(15)
+cfn=(70)
+calls=1 0 0
+70 305 632
+cfl=(2)
+cfn=(71)
+calls=1 0 0
+102 0 0
+cfl=(16)
+cfn=(76)
+calls=1 0 0
+103 57 0
+cfl=(2)
+cfn=(74)
+calls=1 0 0
+103 0 160
+cfl=(2)
+cfn=(71)
+calls=1 0 0
+102 0 0
+cfl=(16)
+cfn=(76)
+calls=1 0 0
+103 122 256
+cfl=(2)
+cfn=(74)
+calls=1 0 0
+103 0 128
+cfl=(2)
+cfn=(71)
+calls=1 0 0
+102 0 0
+cfl=(2)
+cfn=(71)
+calls=1 0 0
+102 0 0
+cfl=(16)
+cfn=(76)
+calls=1 0 0
+103 57 0
+cfl=(2)
+cfn=(74)
+calls=1 0 0
+103 0 128
+cfl=(2)
+cfn=(71)
+calls=1 0 0
+102 0 0
+cfl=(16)
+cfn=(76)
+calls=1 0 0
+103 82 0
+cfl=(2)
+cfn=(74)
+calls=1 0 0
+103 1 112
+cfl=(2)
+cfn=(71)
+calls=1 0 0
+102 0 0
+cfl=(16)
+cfn=(76)
+calls=1 0 0
+103 55 0
+cfl=(2)
+cfn=(74)
+calls=1 0 0
+103 0 128
+cfl=(2)
+cfn=(71)
+calls=1 0 0
+102 0 0
+cfl=(16)
+cfn=(76)
+calls=1 0 0
+103 123 256
+cfl=(2)
+cfn=(74)
+calls=1 0 0
+103 0 128
+cfl=(2)
+cfn=(71)
+calls=1 0 0
+108 0 0
+
+fl=(2)
+fn=(41)
+94 0 0
+
+fl=(2)
+fn=(89)
+131 3 0
+
+fl=(12)
+fn=(90)
+129 11 0
+cfl=(2)
+cfn=(89)
+calls=1 0 0
+131 3 0
+
+fl=(12)
+fn=(91)
+92 24 0
+cfl=(2)
+cfn=(41)
+calls=1 0 0
+94 0 0
+cfl=(12)
+cfn=(90)
+calls=1 0 0
+117 15 0
+
+fl=(11)
+fn=(92)
+29 89 -128
+cfl=(10)
+cfn=(52)
+calls=1 0 0
+31 0 0
+cfl=(11)
+cfn=(58)
+calls=1 0 0
+35 0 0
+cfl=(10)
+cfn=(64)
+calls=1 0 0
+37 0 0
+cfl=(16)
+cfn=(70)
+calls=1 0 0
+37 1054 128
+cfl=(12)
+cfn=(91)
+calls=1 0 0
+39 39 0
+
+fl=(2)
+fn=(93)
+348 0 0
+
+fl=(2)
+fn=(51)
+343 0 0
+
+fl=(8)
+fn=(94)
+292 124 -264
+cfl=(8)
+cfn=(49)
+calls=1 0 0
+298 1 0
+cfl=(2)
+cfn=(50)
+calls=1 0 0
+302 0 0
+cfl=(2)
+cfn=(51)
+calls=1 0 0
+303 0 0
+cfl=(10)
+cfn=(52)
+calls=1 0 0
+304 1 0
+cfl=(2)
+cfn=(53)
+calls=1 0 0
+305 0 0
+cfl=(2)
+cfn=(56)
+calls=1 0 0
+324 3 264
+cfl=(2)
+cfn=(57)
+calls=1 0 0
+326 0 0
+cfl=(2)
+cfn=(51)
+calls=1 0 0
+343 0 0
+cfl=(11)
+cfn=(92)
+calls=1 0 0
+344 1185 0
+cfl=(2)
+cfn=(93)
+calls=1 0 0
+348 0 0
+cfl=(2)
+cfn=(51)
+calls=1 0 0
+343 0 0
+
+fl=(8)
+fn=(95)
+640 27 0
+cfl=(8)
+cfn=(94)
+calls=1 0 0
+642 1316 0
+
+fl=(2)
+fn=(98) php::xdebug_stop_trace
+27 23 80
+
+fl=(18) /var/www/mysite.local/index.php
+fn=(99) {main}
+1 408601 -104
+cfl=(5)
+cfn=(15)
+calls=1 0 0
+3 2022 64320
+cfl=(2)
+cfn=(16)
+calls=1 0 0
+5 6 408
+cfl=(2)
+cfn=(17)
+calls=1 0 0
+6 5 0
+cfl=(2)
+cfn=(18)
+calls=1 0 0
+8 240 80
+cfl=(2)
+cfn=(5)
+calls=1 0 0
+15 2819 81008
+cfl=(8)
+cfn=(32)
+calls=1 0 0
+15 66 0
+cfl=(2)
+cfn=(5)
+calls=1 0 0
+16 2518 55144
+cfl=(12)
+cfn=(40)
+calls=1 0 0
+16 144 0
+cfl=(8)
+cfn=(43)
+calls=1 0 0
+16 30 400
+cfl=(2)
+cfn=(5)
+calls=1 0 0
+18 445 4648
+cfl=(13)
+cfn=(48)
+calls=1 0 0
+18 3473 2352
+cfl=(8)
+cfn=(95)
+calls=1 0 0
+19 5113 85320
+cfl=(13)
+cfn=(48)
+calls=1 0 0
+23 46 632
+cfl=(8)
+cfn=(95)
+calls=1 0 0
+24 1389 0
+cfl=(13)
+cfn=(97)
+calls=1 0 0
+25 64 688
+cfl=(8)
+cfn=(95)
+calls=1 0 0
+25 1343 0
+cfl=(2)
+cfn=(98)
+calls=1 0 0
+27 23 80
+
+fl=(2)
+fn=(41)
+62 0 0
+
+fl=(2)
+fn=(100) php::fclose
+63 1 -432
+
+fl=(12)
+fn=(101) Monolog\Handler\StreamHandler->close
+60 14 -24
+cfl=(2)
+cfn=(41)
+calls=1 0 0
+62 0 0
+cfl=(2)
+cfn=(100)
+calls=1 0 0
+63 1 -432
+
+fl=(10)
+fn=(102) Monolog\Handler\StreamHandler->__destruct
+167 10 0
+cfl=(12)
+cfn=(101)
+calls=1 0 0
+170 15 -456
+
+summary: 428695 738384
+
